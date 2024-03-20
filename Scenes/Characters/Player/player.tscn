@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cer65y53qt2vl"]
+
+[ext_resource type="Texture2D" uid="uid://b5d65gnmmpxd2" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_0e1va"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_0e1va")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
