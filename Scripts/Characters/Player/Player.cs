@@ -3,10 +3,27 @@ using System;
 
 public partial class Player : CharacterBody3D
 {
+    [ExportGroup("Required Nodes")]
+    [Export]
+    private AnimationPlayer _animationPlayer;
+
+    [Export]
+    private Sprite3D _sprite3D;
+
+    //----------------------------------------------------------------------------------------
+
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
     private Vector3 _movmentDirection = Vector3.Zero;
-    
+
+
+    //-----------------------------------------------------------------------------------------
+
+    public override void _Ready()
+    {
+        GD.Print(_animationPlayer.Name);
+        GD.Print(_sprite3D.Name);
+    }
 
     public override void _PhysicsProcess(double delta)
     {
