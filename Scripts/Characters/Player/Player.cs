@@ -19,13 +19,6 @@ public partial class Player : CharacterBody3D
 
 
     //-----------------------------------------------------------------------------------------
-
-    public override void _Ready()
-    {
-        // Play idle animation on start
-        _animationPlayer.Play(AnimationConsts.IDLE);
-    }
-
     public override void _PhysicsProcess(double delta)
     {
         base._PhysicsProcess(delta);
@@ -41,20 +34,9 @@ public partial class Player : CharacterBody3D
             negativeY: InputConsts.MOVE_DOWN,
             positiveY: InputConsts.MOVE_UP
         );
-
-
-        // Play idle animation when the player release the keys
-        // else play Move animation
-        if (_inputVector.Equals(Vector2.Zero))
-        {
-            _animationPlayer.Play(AnimationConsts.IDLE);
-        }
-        else
-        {
-            _animationPlayer.Play(AnimationConsts.MOVE);
-        }
     }
 
+    // User Methods---------------------------------------------------------------------------------
 
     /// <summary>
     /// Apply the movment direction and move the player accordingly
@@ -82,4 +64,12 @@ public partial class Player : CharacterBody3D
         
         _sprite3D.FlipH = Velocity.X < 0;
     }
+
+
+    // Getters and Setters
+    /// <summary>
+    /// Reference to the AnimationPlayer Node
+    /// </summary>
+    /// <value></value>
+    public AnimationPlayer AnimationPlayer { get => _animationPlayer; }
 }

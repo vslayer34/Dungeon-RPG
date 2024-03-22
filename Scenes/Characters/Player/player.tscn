@@ -78,9 +78,14 @@ _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+texture_filter = 1
 texture = ExtResource("1_0e1va")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_spggd")
 }
+
+[node name="IdleState" type="Node" parent="."]
+
+[node name="MoveState" type="Node" parent="."]
