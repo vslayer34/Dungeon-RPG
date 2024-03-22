@@ -47,4 +47,9 @@ public class InputConsts
     /// Reference to the<c>"MoveUp"</c>input action name
     /// </summary>
     public const string MOVE_UP = "MoveUp";
+
+    /// <summary>
+    /// Reference to the<c>"Dash"</c>input action name
+    /// </summary>
+    public const string DASH = "Dash";
 }
