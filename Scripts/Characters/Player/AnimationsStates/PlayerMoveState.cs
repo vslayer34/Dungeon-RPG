@@ -9,7 +9,9 @@ public partial class PlayerMoveState : Node
     public override void _Ready()
     {
         _playerNode = GetOwner<Player>();
-        _playerNode.AnimationPlayer.Play(AnimationConsts.MOVE);
+
+        // Disable the physics process unless its the current state
+        SetPhysicsProcess(false);
     }
 
 
@@ -29,10 +31,16 @@ public partial class PlayerMoveState : Node
     {
         base._Notification(what);
 
-        // Listen to any change in the current state
+        // Listen to any change in the current state and enable physics process
         if (what == 5001)
         {
             _playerNode.AnimationPlayer.Play(AnimationConsts.MOVE);
+            SetPhysicsProcess(true);
+        }
+
+        if (what == 5002)
+        {
+            SetPhysicsProcess(false);
         }
     }
 }

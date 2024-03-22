@@ -21,7 +21,7 @@ public partial class StateMachine : Node
 
     /// <summary>
     /// Loop through the states array and chane the current state from the previouse to the new state<br/>
-    /// Then fire a notification of the change in the state to be played by  the relevant state
+    /// Then fire a notification for the previouse state to disable and another notification for the current state to play
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public void SwitchState<T>()
@@ -38,6 +38,8 @@ public partial class StateMachine : Node
 
         if (newState != null)
         {
+            // Befor change to the new state disable the previouse one
+            _currentState.Notification(5002);
             _currentState = newState;
             _currentState.Notification(5001);
         }
