@@ -21,8 +21,8 @@ public partial class Player : CharacterBody3D
 
     public override void _Ready()
     {
-        GD.Print(_animationPlayer.Name);
-        GD.Print(_sprite3D.Name);
+        // Play idle animation on start
+        _animationPlayer.Play("Idle");
     }
 
     public override void _PhysicsProcess(double delta)
@@ -34,14 +34,24 @@ public partial class Player : CharacterBody3D
 
     public override void _Input(InputEvent @event)
     {
-        base._Input(@event);
-
         _inputVector = Input.GetVector(
             negativeX: "MoveLeft",
             positiveX: "MoveRight",
             negativeY: "MoveDown",
             positiveY: "MoveUp"
-        );    
+        );
+
+
+        // Play idle animation when the player release the keys
+        // else play Move animation
+        if (_inputVector.Equals(Vector2.Zero))
+        {
+            _animationPlayer.Play("Idle");
+        }
+        else
+        {
+            _animationPlayer.Play("Move");
+        }
     }
 
 
