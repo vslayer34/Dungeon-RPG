@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using DungeonRPG.Scripts.Helper;
 
 public partial class Player : CharacterBody3D
 {
@@ -22,7 +23,7 @@ public partial class Player : CharacterBody3D
     public override void _Ready()
     {
         // Play idle animation on start
-        _animationPlayer.Play("Idle");
+        _animationPlayer.Play(AnimationConsts.IDLE);
     }
 
     public override void _PhysicsProcess(double delta)
@@ -35,10 +36,10 @@ public partial class Player : CharacterBody3D
     public override void _Input(InputEvent @event)
     {
         _inputVector = Input.GetVector(
-            negativeX: "MoveLeft",
-            positiveX: "MoveRight",
-            negativeY: "MoveDown",
-            positiveY: "MoveUp"
+            negativeX: InputConsts.MOVE_LEFT,
+            positiveX: InputConsts.MOVE_RIGHT,
+            negativeY: InputConsts.MOVE_DOWN,
+            positiveY: InputConsts.MOVE_UP
         );
 
 
@@ -46,11 +47,11 @@ public partial class Player : CharacterBody3D
         // else play Move animation
         if (_inputVector.Equals(Vector2.Zero))
         {
-            _animationPlayer.Play("Idle");
+            _animationPlayer.Play(AnimationConsts.IDLE);
         }
         else
         {
-            _animationPlayer.Play("Move");
+            _animationPlayer.Play(AnimationConsts.MOVE);
         }
     }
 
