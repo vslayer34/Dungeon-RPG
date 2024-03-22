@@ -13,13 +13,26 @@ public partial class PlayerMoveState : Node
     }
 
 
+    public override void _PhysicsProcess(double delta)
+    {
+        base._PhysicsProcess(delta);
+
+        // Switch to the idle state if movment input is released
+        if (_playerNode.InputVector == Vector2.Zero)
+        {
+            _playerNode.StateMachine.SwitchState<PlayerIdleState>();
+        }
+    }
+
+
     public override void _Notification(int what)
     {
         base._Notification(what);
 
+        // Listen to any change in the current state
         if (what == 5001)
         {
-            _playerNode.AnimationPlayer.Play(AnimationConsts.IDLE);
+            _playerNode.AnimationPlayer.Play(AnimationConsts.MOVE);
         }
     }
 }

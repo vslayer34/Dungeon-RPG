@@ -75,10 +75,11 @@ _data = {
 "Move": SubResource("Animation_6dbfn")
 }
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine")]
 script = ExtResource("1_bc28i")
 _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
+StateMachine = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 texture_filter = 1
@@ -89,10 +90,10 @@ libraries = {
 "": SubResource("AnimationLibrary_spggd")
 }
 
-[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_stats")]
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_states")]
 script = ExtResource("32_l2g4n")
 _currentState = NodePath("IdleState")
-_stats = [NodePath("IdleState"), NodePath("MoveState")]
+_states = [NodePath("IdleState"), NodePath("MoveState")]
 
 [node name="IdleState" type="Node" parent="StateMachine"]
 script = ExtResource("32_8u8yt")

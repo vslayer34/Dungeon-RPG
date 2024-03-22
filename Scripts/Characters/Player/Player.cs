@@ -11,6 +11,9 @@ public partial class Player : CharacterBody3D
     [Export]
     private Sprite3D _sprite3D;
 
+    [Export]
+    public StateMachine StateMachine { get; private set; }
+
     //----------------------------------------------------------------------------------------
 
     private float _speed = 5.0f;
@@ -66,10 +69,17 @@ public partial class Player : CharacterBody3D
     }
 
 
-    // Getters and Setters
+    // Getters and Setters----------------------------------------------------------------------------------
+    
     /// <summary>
     /// Reference to the AnimationPlayer Node
     /// </summary>
     /// <value></value>
     public AnimationPlayer AnimationPlayer { get => _animationPlayer; }
+
+    /// <summary>
+    /// Reference to the input vector
+    /// </summary>
+    /// <value></value>
+    public Vector2 InputVector { get => _inputVector; }
 }
