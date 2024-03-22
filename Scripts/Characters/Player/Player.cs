@@ -65,5 +65,21 @@ public partial class Player : CharacterBody3D
         Velocity = _movmentDirection * _speed;
 
         MoveAndSlide();
+        Flip();
+    }
+
+
+
+    /// <summary>
+    /// Flip the player sprite according to the moving direction
+    /// </summary>
+    private void Flip()
+    {
+        if (Velocity.X == 0)
+        {
+            return;
+        }
+        
+        _sprite3D.FlipH = Velocity.X < 0;
     }
 }
