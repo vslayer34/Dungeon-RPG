@@ -13,17 +13,13 @@ public partial class PlayerMoveState : Node
     }
 
 
-    public override void _Input(InputEvent @event)
+    public override void _Notification(int what)
     {
-        // // Play idle animation when the player release the keys
-        // // else play Move animation
-        // if (_inputVector.Equals(Vector2.Zero))
-        // {
-        //     _animationPlayer.Play(AnimationConsts.IDLE);
-        // }
-        // else
-        // {
-        //     _animationPlayer.Play(AnimationConsts.MOVE);
-        // }
+        base._Notification(what);
+
+        if (what == 5001)
+        {
+            _playerNode.AnimationPlayer.Play(AnimationConsts.IDLE);
+        }
     }
 }

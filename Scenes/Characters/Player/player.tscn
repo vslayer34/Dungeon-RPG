@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cer65y53qt2vl"]
+[gd_scene load_steps=38 format=3 uid="uid://cer65y53qt2vl"]
 
 [ext_resource type="Texture2D" uid="uid://b5d65gnmmpxd2" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_0e1va"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_bc28i"]
@@ -31,6 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://cnylokwfwqlho" path="res://Assets/Sprites/Characters/Player/Running/Running_009.png" id="28_000iu"]
 [ext_resource type="Texture2D" uid="uid://b4k36xyihckf" path="res://Assets/Sprites/Characters/Player/Running/Running_010.png" id="29_uk0y6"]
 [ext_resource type="Texture2D" uid="uid://dtnefya6cbnww" path="res://Assets/Sprites/Characters/Player/Running/Running_011.png" id="30_u1c3t"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/AnimationsStates/PlayerIdleState.cs" id="32_8u8yt"]
+[ext_resource type="Script" path="res://Scripts/Characters/StateMachine.cs" id="32_l2g4n"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/AnimationsStates/PlayerMoveState.cs" id="33_u1b8d"]
 
 [sub_resource type="Animation" id="Animation_qwnlq"]
 resource_name = "Idle"
@@ -86,6 +89,13 @@ libraries = {
 "": SubResource("AnimationLibrary_spggd")
 }
 
-[node name="IdleState" type="Node" parent="."]
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_stats")]
+script = ExtResource("32_l2g4n")
+_currentState = NodePath("IdleState")
+_stats = [NodePath("IdleState"), NodePath("MoveState")]
 
-[node name="MoveState" type="Node" parent="."]
+[node name="IdleState" type="Node" parent="StateMachine"]
+script = ExtResource("32_8u8yt")
+
+[node name="MoveState" type="Node" parent="StateMachine"]
+script = ExtResource("33_u1b8d")

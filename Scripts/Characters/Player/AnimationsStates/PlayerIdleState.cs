@@ -9,6 +9,16 @@ public partial class PlayerIdleState : Node
     public override void _Ready()
     {
         _playerNode = GetOwner<Player>();
-        _playerNode.AnimationPlayer.Play(AnimationConsts.IDLE);
+    }
+
+
+    public override void _Notification(int what)
+    {
+        base._Notification(what);
+
+        if (what == 5001)
+        {
+            _playerNode.AnimationPlayer.Play(AnimationConsts.IDLE);
+        }
     }
 }
