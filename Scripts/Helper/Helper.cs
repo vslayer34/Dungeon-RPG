@@ -15,6 +15,11 @@ public class AnimationConsts
     /// Reference to the<c>"Move"</c>animation name
     /// </summary>
     public const string MOVE = "Move";
+
+    /// <summary>
+    /// Reference to the<c>"Dash"</c>animation name
+    /// </summary>
+    public const string DASH = "Dash";
 }
 
 
