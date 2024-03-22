@@ -39,6 +39,7 @@ public partial class PlayerIdleState : Node
             SetPhysicsProcess(true);
         }
 
+        // Listen to the notification of disabling the previouse state
         if (what == 5002)
         {
             SetPhysicsProcess(false);

@@ -2,8 +2,9 @@ using DungeonRPG.Scripts.Helper;
 using Godot;
 using System;
 
-public partial class PlayerMoveState : Node
+public partial class PlayerDashState : Node
 {
+    [Export]
     private Player _playerNode;
 
     public override void _Ready()
@@ -15,18 +16,6 @@ public partial class PlayerMoveState : Node
     }
 
 
-    public override void _PhysicsProcess(double delta)
-    {
-        base._PhysicsProcess(delta);
-
-        // Switch to the idle state if movment input is released
-        if (_playerNode.InputVector == Vector2.Zero)
-        {
-            _playerNode.StateMachine.SwitchState<PlayerIdleState>();
-        }
-    }
-
-
     public override void _Notification(int what)
     {
         base._Notification(what);
@@ -34,10 +23,10 @@ public partial class PlayerMoveState : Node
         // Listen to any change in the current state and enable physics process
         if (what == 5001)
         {
-            _playerNode.AnimationPlayer.Play(AnimationConsts.MOVE);
+            _playerNode.AnimationPlayer.Play(AnimationConsts.DASH);
             SetPhysicsProcess(true);
         }
-
+        
         // Listen to the notification of disabling the previouse state
         if (what == 5002)
         {
