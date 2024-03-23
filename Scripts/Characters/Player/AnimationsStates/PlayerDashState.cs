@@ -4,7 +4,6 @@ using System;
 
 public partial class PlayerDashState : Node
 {
-    [Export]
     private Player _playerNode;
 
     public override void _Ready()
