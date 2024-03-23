@@ -19,6 +19,7 @@ public partial class Player : CharacterBody3D
 
     //----------------------------------------------------------------------------------------
 
+    [Export(PropertyHint.Range, "0, 10, 0.1")]
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
     private Vector3 _movmentDirection = Vector3.Zero;
@@ -27,7 +28,7 @@ public partial class Player : CharacterBody3D
 
     private bool _isDashing = false;
     
-    [Export]
+    [Export(PropertyHint.Range, "0, 20, 0.1")]
     private float _dashSpeed = 10.0f;
     
     // The last input when the player pressed dash
