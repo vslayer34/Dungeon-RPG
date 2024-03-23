@@ -54,7 +54,7 @@ public partial class Player : CharacterBody3D
     private void MovePlayer()
     {
         _movmentDirection = new Vector3(_inputVector.X, 0.0f, -1 * _inputVector.Y);
-        Velocity = _movmentDirection * _speed;
+        Velocity = _isDashing ? Vector3.Zero : _movmentDirection * _speed;
 
         MoveAndSlide();
         Flip();
