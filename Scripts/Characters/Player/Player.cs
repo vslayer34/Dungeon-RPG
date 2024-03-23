@@ -20,6 +20,8 @@ public partial class Player : CharacterBody3D
     private Vector2 _inputVector = Vector2.Zero;
     private Vector3 _movmentDirection = Vector3.Zero;
 
+    private bool _isDashing = false;
+
 
     //-----------------------------------------------------------------------------------------
     public override void _PhysicsProcess(double delta)
@@ -38,7 +40,10 @@ public partial class Player : CharacterBody3D
             positiveY: InputConsts.MOVE_UP
         );
 
-        // if (Input)
+        if (Input.IsActionJustPressed(InputConsts.DASH))
+        {
+            _isDashing = true;
+        }
     }
 
     // User Methods---------------------------------------------------------------------------------
@@ -76,12 +81,15 @@ public partial class Player : CharacterBody3D
     /// <summary>
     /// Reference to the AnimationPlayer Node
     /// </summary>
-    /// <value></value>
     public AnimationPlayer AnimationPlayer { get => _animationPlayer; }
 
     /// <summary>
     /// Reference to the input vector
     /// </summary>
-    /// <value></value>
     public Vector2 InputVector { get => _inputVector; }
+
+    /// <summary>
+    /// Reference to the player dashing stats
+    /// </summary>
+    public bool IsDashing { get => _isDashing; }
 }

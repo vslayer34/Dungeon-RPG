@@ -24,6 +24,11 @@ public partial class PlayerMoveState : Node
         {
             _playerNode.StateMachine.SwitchState<PlayerIdleState>();
         }
+
+        if (_playerNode.IsDashing)
+        {
+            _playerNode.StateMachine.SwitchState<PlayerDashState>();
+        }
     }
 
 
