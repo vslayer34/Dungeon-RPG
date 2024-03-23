@@ -1,3 +1,4 @@
+using DungeonRPG.Scripts.Helper;
 using Godot;
 using System;
 
@@ -15,7 +16,7 @@ public partial class StateMachine : Node
     public override void _Ready()
     {
         // sent notification of the current state 
-        _currentState.Notification(5001);
+        _currentState.Notification(NotificationConsts.ENTER_STATE);
     }
 
 
@@ -39,9 +40,9 @@ public partial class StateMachine : Node
         if (newState != null)
         {
             // Befor change to the new state disable the previouse one
-            _currentState.Notification(5002);
+            _currentState.Notification(NotificationConsts.EXIT_STATE);
             _currentState = newState;
-            _currentState.Notification(5001);
+            _currentState.Notification(NotificationConsts.ENTER_STATE);
         }
     }
 }

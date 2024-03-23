@@ -53,3 +53,20 @@ public class InputConsts
     /// </summary>
     public const string DASH = "Dash";
 }
+
+
+/// <summary>
+/// Class that holds references to the Notification Number
+/// </summary>
+public class NotificationConsts
+{
+    /// <summary>
+    /// Reference to the<c>5001</c> notification number
+    /// </summary>
+    public const int ENTER_STATE = 5001;
+
+    /// <summary>
+    /// Reference to the<c>5002</c> notification number
+    /// </summary>
+    public const int EXIT_STATE = 5002;
+}

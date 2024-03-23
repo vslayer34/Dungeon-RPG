@@ -1,3 +1,4 @@
+using DungeonRPG.Scripts.Helper;
 using Godot;
 
 public abstract partial class PlayerState : Node
@@ -19,14 +20,14 @@ public abstract partial class PlayerState : Node
         base._Notification(what);
 
         // Listen to any change in the current state and enable physics process
-        if (what == 5001)
+        if (what == NotificationConsts.ENTER_STATE)
         {
             EnterCurrentState();
             SetPhysicsProcess(true);
         }
 
         // Listen to the notification of disabling the previouse state
-        if (what == 5002)
+        if (what == NotificationConsts.EXIT_STATE)
         {
             SetPhysicsProcess(false);
         }
