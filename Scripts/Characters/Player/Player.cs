@@ -29,7 +29,9 @@ public partial class Player : CharacterBody3D
     
     [Export]
     private float _dashSpeed = 10.0f;
-    // private Vector2 _lastInput
+    
+    // The last input when the player pressed dash
+    private Vector3 _dashDirection;
 
 
     //-----------------------------------------------------------------------------------------
@@ -59,7 +61,17 @@ public partial class Player : CharacterBody3D
 
         if (Input.IsActionJustPressed(InputConsts.DASH))
         {
-            // Enter dash state
+            // Enter dash state and set its direction
+            // if the player is movineg get last move
+            if (_inputVector != Vector2.Zero)
+            {
+                _dashDirection = new Vector3(_inputVector.X, 0.0f, -_inputVector.Y);
+            }
+            // if player is stationiory get the direction according to sprite orientation
+            else
+            {
+                _dashDirection = _sprite3D.FlipH ? Vector3.Left : Vector3.Right;
+            }
             _isDashing = true;
             _dashTimer.Start();
         }
@@ -75,7 +87,9 @@ public partial class Player : CharacterBody3D
         _movmentDirection = new Vector3(_inputVector.X, 0.0f, -1 * _inputVector.Y);
 
         // Prevent the player from moving when he/she is dashing
-        Velocity = _isDashing ? _movmentDirection * _dashSpeed : _movmentDirection * _speed;
+        Velocity = _isDashing ? _dashDirection * _dashSpeed : _movmentDirection * _speed;
+
+
 
         MoveAndSlide();
         Flip();
