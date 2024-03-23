@@ -54,6 +54,8 @@ public partial class Player : CharacterBody3D
     private void MovePlayer()
     {
         _movmentDirection = new Vector3(_inputVector.X, 0.0f, -1 * _inputVector.Y);
+
+        // Prevent the player from moving when he/she is dashing
         Velocity = _isDashing ? Vector3.Zero : _movmentDirection * _speed;
 
         MoveAndSlide();
