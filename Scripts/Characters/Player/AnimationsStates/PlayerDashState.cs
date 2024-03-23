@@ -14,6 +14,15 @@ public partial class PlayerDashState : Node
         SetPhysicsProcess(false);
     }
 
+    public override void _PhysicsProcess(double delta)
+    {
+        if (!_playerNode.IsDashing)
+        {
+            // Switch the animation to idle when the dash is finished
+            _playerNode.StateMachine.SwitchState<PlayerIdleState>();
+        }
+    }
+
 
     public override void _Notification(int what)
     {

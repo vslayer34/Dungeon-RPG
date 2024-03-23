@@ -99,11 +99,12 @@ _data = {
 "Move": SubResource("Animation_6dbfn")
 }
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine", "_dashTimer")]
 script = ExtResource("1_bc28i")
 _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")
+_dashTimer = NodePath("DashTimer")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 texture_filter = 1
@@ -113,6 +114,10 @@ texture = ExtResource("2_oh2r3")
 libraries = {
 "": SubResource("AnimationLibrary_spggd")
 }
+
+[node name="DashTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_states")]
 script = ExtResource("32_l2g4n")

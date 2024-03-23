@@ -14,16 +14,33 @@ public partial class Player : CharacterBody3D
     [Export]
     public StateMachine StateMachine { get; private set; }
 
+    [Export]
+    private Timer _dashTimer;
+
     //----------------------------------------------------------------------------------------
 
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
     private Vector3 _movmentDirection = Vector3.Zero;
 
+    //Dash Config------------------------------------------------------------------------------
+
     private bool _isDashing = false;
+    
+    [Export]
+    private float _dashSpeed = 10.0f;
+    // private Vector2 _lastInput
 
 
     //-----------------------------------------------------------------------------------------
+
+    public override void _Ready()
+    {
+        _dashTimer.Timeout += HandleDashTimeOut;
+    }
+
+
+
     public override void _PhysicsProcess(double delta)
     {
         base._PhysicsProcess(delta);
@@ -42,7 +59,9 @@ public partial class Player : CharacterBody3D
 
         if (Input.IsActionJustPressed(InputConsts.DASH))
         {
+            // Enter dash state
             _isDashing = true;
+            _dashTimer.Start();
         }
     }
 
@@ -56,7 +75,7 @@ public partial class Player : CharacterBody3D
         _movmentDirection = new Vector3(_inputVector.X, 0.0f, -1 * _inputVector.Y);
 
         // Prevent the player from moving when he/she is dashing
-        Velocity = _isDashing ? Vector3.Zero : _movmentDirection * _speed;
+        Velocity = _isDashing ? _movmentDirection * _dashSpeed : _movmentDirection * _speed;
 
         MoveAndSlide();
         Flip();
@@ -75,6 +94,15 @@ public partial class Player : CharacterBody3D
         }
         
         _sprite3D.FlipH = Velocity.X < 0;
+    }
+
+
+    /// <summary>
+    /// return the player from the dash state
+    /// </summary>
+    private void HandleDashTimeOut()
+    {
+        _isDashing = false;
     }
 
 
