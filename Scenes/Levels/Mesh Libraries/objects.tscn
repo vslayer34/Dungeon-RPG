@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=55 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -51,6 +51,9 @@
 [ext_resource type="PackedScene" uid="uid://bviu0ynwvqmwn" path="res://Assets/Models/Dungeon/gltf/Objects/Barriers/barrier_colum_half.gltf.glb" id="49_7ni7n"]
 [ext_resource type="PackedScene" uid="uid://b0shqumwcdiqm" path="res://Assets/Models/Dungeon/gltf/Objects/Barriers/barrier_corner.gltf.glb" id="50_u1d7h"]
 [ext_resource type="PackedScene" uid="uid://hdeyxlpk37i7" path="res://Assets/Models/Dungeon/gltf/Objects/Barriers/barrier_half.gltf.glb" id="51_tojh8"]
+[ext_resource type="PackedScene" uid="uid://b341omrxrergb" path="res://Assets/Models/Dungeon/gltf/Objects/Beds/bed_decorated.gltf.glb" id="52_8wv18"]
+[ext_resource type="PackedScene" uid="uid://doi5scyxaafei" path="res://Assets/Models/Dungeon/gltf/Objects/Beds/bed_floor.gltf.glb" id="53_fw4sr"]
+[ext_resource type="PackedScene" uid="uid://mc5msj7vqx6p" path="res://Assets/Models/Dungeon/gltf/Objects/Beds/bed_frame.gltf.glb" id="54_t15r0"]
 
 [node name="Objects" type="Node3D"]
 
@@ -212,3 +215,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
 
 [node name="barrier_half_gltf" parent="Barriers" instance=ExtResource("51_tojh8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="Beds" type="Node3D" parent="."]
+
+[node name="bed_decorated_gltf" parent="Beds" instance=ExtResource("52_8wv18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+
+[node name="bed_floor_gltf" parent="Beds" instance=ExtResource("53_fw4sr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7)
+
+[node name="bed_frame_gltf" parent="Beds" instance=ExtResource("54_t15r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
