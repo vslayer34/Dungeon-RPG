@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://bytxulymmjnwe"]
+
+[ext_resource type="PackedScene" uid="uid://cwbo0hjobipfx" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs.gltf.glb" id="1_djde4"]
+[ext_resource type="PackedScene" uid="uid://c8eybsbav8bxk" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_narrow.gltf.glb" id="2_n38a2"]
+[ext_resource type="PackedScene" uid="uid://nraiqy0u0cqx" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_walled.gltf.glb" id="3_b1h2m"]
+[ext_resource type="PackedScene" uid="uid://drhhmo3yby1y8" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_wall_left.gltf.glb" id="4_rmms8"]
+[ext_resource type="PackedScene" uid="uid://bfycfvbf5qrki" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_wall_right.gltf.glb" id="5_sjeqw"]
+[ext_resource type="PackedScene" uid="uid://dklpo0x448jlm" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_wide.gltf.glb" id="6_t2xue"]
+[ext_resource type="PackedScene" uid="uid://c1e1bo7err3wr" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_wood.gltf.glb" id="7_j5a5a"]
+[ext_resource type="PackedScene" uid="uid://dxai757oymo3x" path="res://Assets/Models/Dungeon/gltf/Stairs/stairs_wood_decorated.gltf.glb" id="8_uvxgi"]
+
+[node name="Stairs" type="Node3D"]
+
+[node name="stairs_gltf" parent="." instance=ExtResource("1_djde4")]
+
+[node name="stairs_narrow_gltf" parent="." instance=ExtResource("2_n38a2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="stairs_walled_gltf" parent="." instance=ExtResource("3_b1h2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="stairs_wall_left_gltf" parent="." instance=ExtResource("4_rmms8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7)
+
+[node name="stairs_wall_right_gltf" parent="." instance=ExtResource("5_sjeqw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -7)
+
+[node name="stairs_wide_gltf" parent="." instance=ExtResource("6_t2xue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -7)
+
+[node name="stairs_wood_gltf" parent="." instance=ExtResource("7_j5a5a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 8)
+
+[node name="stairs_wood_decorated_gltf" parent="." instance=ExtResource("8_uvxgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
