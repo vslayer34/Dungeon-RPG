@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=73 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -66,6 +66,12 @@
 [ext_resource type="PackedScene" uid="uid://8waq6mi1du5k" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_small.gltf.glb" id="64_yuls8"]
 [ext_resource type="PackedScene" uid="uid://5so6a3apxrsl" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_small_decorated.gltf.glb" id="65_h7811"]
 [ext_resource type="PackedScene" uid="uid://5bmlu7hyiuo8" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_stacked.gltf.glb" id="66_a2n1j"]
+[ext_resource type="PackedScene" uid="uid://b24ehiafw1e8y" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle.gltf.glb" id="67_if5rn"]
+[ext_resource type="PackedScene" uid="uid://bjxnft2qdrqe4" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_lit.gltf.glb" id="68_vmu2p"]
+[ext_resource type="PackedScene" uid="uid://b17owns2er4rr" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_melted.gltf.glb" id="69_rd8a1"]
+[ext_resource type="PackedScene" uid="uid://clbnrgksrjvwp" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_thin.gltf.glb" id="70_pnic2"]
+[ext_resource type="PackedScene" uid="uid://ohxchkt25ugp" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_thin_lit.gltf.glb" id="71_fmqk6"]
+[ext_resource type="PackedScene" uid="uid://dyxu1y2075u6c" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_triple.gltf.glb" id="72_12t14"]
 
 [node name="Objects" type="Node3D"]
 
@@ -278,3 +284,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -3)
 
 [node name="box_stacked_gltf" parent="Boxes" instance=ExtResource("66_a2n1j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="Candles" type="Node3D" parent="."]
+
+[node name="candle_gltf" parent="Candles" instance=ExtResource("67_if5rn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="candle_lit_gltf" parent="Candles" instance=ExtResource("68_vmu2p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -10)
+
+[node name="candle_melted_gltf" parent="Candles" instance=ExtResource("69_rd8a1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -10)
+
+[node name="candle_thin_gltf" parent="Candles" instance=ExtResource("70_pnic2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -10)
+
+[node name="candle_thin_lit_gltf" parent="Candles" instance=ExtResource("71_fmqk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
+
+[node name="candle_triple_gltf" parent="Candles" instance=ExtResource("72_12t14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
