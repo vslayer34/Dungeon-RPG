@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=127 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -117,6 +117,15 @@
 [ext_resource type="PackedScene" uid="uid://bwkrgchpwfke1" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch.gltf.glb" id="115_3fhvr"]
 [ext_resource type="PackedScene" uid="uid://jb8tbqhgtb6x" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch_lit.gltf.glb" id="116_v568x"]
 [ext_resource type="PackedScene" uid="uid://bm2a5ckjsesvv" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch_mounted.gltf.glb" id="117_cayen"]
+[ext_resource type="PackedScene" uid="uid://daanrlmti36g1" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_large_A.gltf.glb" id="118_3pwdh"]
+[ext_resource type="PackedScene" uid="uid://b43gvtwmwh323" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_large_B.gltf.glb" id="119_gfy7a"]
+[ext_resource type="PackedScene" uid="uid://dyqgvmwni3byt" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_large_C.gltf.glb" id="120_r5cxr"]
+[ext_resource type="PackedScene" uid="uid://bec85f8ldlqud" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_medium_A.gltf.glb" id="121_k25qo"]
+[ext_resource type="PackedScene" uid="uid://c0cra0j1bg0lk" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_medium_B.gltf.glb" id="122_63o5f"]
+[ext_resource type="PackedScene" uid="uid://b64k1bmcuerl5" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_medium_C.gltf.glb" id="123_4t00n"]
+[ext_resource type="PackedScene" uid="uid://e8g0qre4vuh" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_small_A.gltf.glb" id="124_qmupk"]
+[ext_resource type="PackedScene" uid="uid://dxf10juu2fwfb" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_small_B.gltf.glb" id="125_cl1x5"]
+[ext_resource type="PackedScene" uid="uid://qss7orojs2lb" path="res://Assets/Models/Dungeon/gltf/Objects/Trunks/trunk_small_C.gltf.glb" id="126_1wo7n"]
 
 [node name="Objects" type="Node3D"]
 
@@ -510,3 +519,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -16)
 
 [node name="torch_mounted_gltf" parent="Torches" instance=ExtResource("117_cayen")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -16)
+
+[node name="Trunks" type="Node3D" parent="."]
+
+[node name="trunk_large_A_gltf" parent="Trunks" instance=ExtResource("118_3pwdh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 0)
+
+[node name="trunk_large_B_gltf" parent="Trunks" instance=ExtResource("119_gfy7a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -2)
+
+[node name="trunk_large_C_gltf" parent="Trunks" instance=ExtResource("120_r5cxr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -4)
+
+[node name="trunk_medium_A_gltf" parent="Trunks" instance=ExtResource("121_k25qo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -6)
+
+[node name="trunk_medium_B_gltf" parent="Trunks" instance=ExtResource("122_63o5f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -8)
+
+[node name="trunk_medium_C_gltf" parent="Trunks" instance=ExtResource("123_4t00n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -10)
+
+[node name="trunk_small_A_gltf" parent="Trunks" instance=ExtResource("124_qmupk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -12)
+
+[node name="trunk_small_B_gltf" parent="Trunks" instance=ExtResource("125_cl1x5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -14)
+
+[node name="trunk_small_C_gltf" parent="Trunks" instance=ExtResource("126_1wo7n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -16)
