@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=74 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -72,6 +72,7 @@
 [ext_resource type="PackedScene" uid="uid://clbnrgksrjvwp" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_thin.gltf.glb" id="70_pnic2"]
 [ext_resource type="PackedScene" uid="uid://ohxchkt25ugp" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_thin_lit.gltf.glb" id="71_fmqk6"]
 [ext_resource type="PackedScene" uid="uid://dyxu1y2075u6c" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_triple.gltf.glb" id="72_12t14"]
+[ext_resource type="PackedScene" uid="uid://6hxuuhda0ddx" path="res://Assets/Models/Dungeon/gltf/Objects/Chairs/chair.gltf.glb" id="73_peit5"]
 
 [node name="Objects" type="Node3D"]
 
@@ -304,3 +305,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
 
 [node name="candle_triple_gltf" parent="Candles" instance=ExtResource("72_12t14")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+
+[node name="Chairs" type="Node3D" parent="."]
+
+[node name="chair_gltf" parent="Chairs" instance=ExtResource("73_peit5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -10)
