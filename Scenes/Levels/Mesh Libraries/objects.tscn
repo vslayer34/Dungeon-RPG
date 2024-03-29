@@ -428,13 +428,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -13)
 [node name="stool_gltf" parent="Stool" instance=ExtResource("97_r7178")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -13)
 
-[node name="sword_shield_gltf" parent="." instance=ExtResource("98_wtsyr")]
+[node name="Swords" type="Node3D" parent="."]
+
+[node name="sword_shield_gltf" parent="Swords" instance=ExtResource("98_wtsyr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 
-[node name="sword_shield_broken_gltf" parent="." instance=ExtResource("99_bp07l")]
+[node name="sword_shield_broken_gltf" parent="Swords" instance=ExtResource("99_bp07l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -16)
 
-[node name="sword_shield_gold_gltf" parent="." instance=ExtResource("100_j2ysj")]
+[node name="sword_shield_gold_gltf" parent="Swords" instance=ExtResource("100_j2ysj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
-
-[node name="Swords" type="Node3D" parent="."]
