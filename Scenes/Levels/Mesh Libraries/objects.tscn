@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=81 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -79,6 +79,7 @@
 [ext_resource type="PackedScene" uid="uid://bpxhekgpjkr65" path="res://Assets/Models/Dungeon/gltf/Objects/Coins/coin_stack_large.gltf.glb" id="77_asb2j"]
 [ext_resource type="PackedScene" uid="uid://cc7rt6q3tsx0y" path="res://Assets/Models/Dungeon/gltf/Objects/Coins/coin_stack_medium.gltf.glb" id="78_c6tuu"]
 [ext_resource type="PackedScene" uid="uid://b2p7p3ebh7tii" path="res://Assets/Models/Dungeon/gltf/Objects/Coins/coin_stack_small.gltf.glb" id="79_42k8q"]
+[ext_resource type="PackedScene" uid="uid://bpvqkds8qxaqk" path="res://Assets/Models/Dungeon/gltf/Objects/Crates/crates_stacked.gltf.glb" id="80_4cbuo"]
 
 [node name="Objects" type="Node3D"]
 
@@ -338,3 +339,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7)
 
 [node name="coin_stack_small_gltf" parent="Coins" instance=ExtResource("79_42k8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 9)
+
+[node name="Crates" type="Node3D" parent="."]
+
+[node name="crates_stacked_gltf" parent="Crates" instance=ExtResource("80_4cbuo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 5)
