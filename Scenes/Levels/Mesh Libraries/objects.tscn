@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=91 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -85,6 +85,11 @@
 [ext_resource type="PackedScene" uid="uid://c6gygcmtcapbo" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/key.gltf.glb" id="83_ndfe5"]
 [ext_resource type="PackedScene" uid="uid://cbqvltublnixy" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/keyring.gltf.glb" id="84_hukh1"]
 [ext_resource type="PackedScene" uid="uid://dbasdfux5fu2f" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/keyring_hanging.gltf.glb" id="85_omd6p"]
+[ext_resource type="PackedScene" uid="uid://bfrpe1kml1i4k" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate.gltf.glb" id="86_i3jed"]
+[ext_resource type="PackedScene" uid="uid://bbe57pffjfv3r" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_food_A.gltf.glb" id="87_nf2r6"]
+[ext_resource type="PackedScene" uid="uid://ceoanp8y2xkcn" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_food_B.gltf.glb" id="88_bohnq"]
+[ext_resource type="PackedScene" uid="uid://cg1pmk3mc640i" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_small.gltf.glb" id="89_mb1ca"]
+[ext_resource type="PackedScene" uid="uid://bijmo4fgoc8m8" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_stack.gltf.glb" id="90_pdspv"]
 
 [node name="Objects" type="Node3D"]
 
@@ -368,3 +373,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 2)
 
 [node name="keyring_hanging_gltf" parent="Keys" instance=ExtResource("85_omd6p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 4)
+
+[node name="Plates" type="Node3D" parent="."]
+
+[node name="plate_gltf" parent="Plates" instance=ExtResource("86_i3jed")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+
+[node name="plate_food_A_gltf" parent="Plates" instance=ExtResource("87_nf2r6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+
+[node name="plate_food_B_gltf" parent="Plates" instance=ExtResource("88_bohnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -6)
+
+[node name="plate_small_gltf" parent="Plates" instance=ExtResource("89_mb1ca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
+
+[node name="plate_stack_gltf" parent="Plates" instance=ExtResource("90_pdspv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -10)
