@@ -1,4 +1,4 @@
-[gd_scene load_steps=115 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=118 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -114,6 +114,9 @@
 [ext_resource type="PackedScene" uid="uid://ch51bv0ytecv3" path="res://Assets/Models/Dungeon/gltf/Objects/Tables/table_small.gltf.glb" id="112_tmvgw"]
 [ext_resource type="PackedScene" uid="uid://dctxottlbyjhy" path="res://Assets/Models/Dungeon/gltf/Objects/Tables/table_small_decorated_A.gltf.glb" id="113_4pf4l"]
 [ext_resource type="PackedScene" uid="uid://ckr3kyqycsgb" path="res://Assets/Models/Dungeon/gltf/Objects/Tables/table_small_decorated_B.gltf.glb" id="114_yenjf"]
+[ext_resource type="PackedScene" uid="uid://bwkrgchpwfke1" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch.gltf.glb" id="115_3fhvr"]
+[ext_resource type="PackedScene" uid="uid://jb8tbqhgtb6x" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch_lit.gltf.glb" id="116_v568x"]
+[ext_resource type="PackedScene" uid="uid://bm2a5ckjsesvv" path="res://Assets/Models/Dungeon/gltf/Objects/Torches/torch_mounted.gltf.glb" id="117_cayen"]
 
 [node name="Objects" type="Node3D"]
 
@@ -496,3 +499,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -26)
 
 [node name="table_small_decorated_B_gltf" parent="Tables" instance=ExtResource("114_yenjf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -20)
+
+[node name="Torches" type="Node3D" parent="."]
+
+[node name="torch_gltf" parent="Torches" instance=ExtResource("115_3fhvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -16)
+
+[node name="torch_lit_gltf" parent="Torches" instance=ExtResource("116_v568x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -16)
+
+[node name="torch_mounted_gltf" parent="Torches" instance=ExtResource("117_cayen")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -16)
