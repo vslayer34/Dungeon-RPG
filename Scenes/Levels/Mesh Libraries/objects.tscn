@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=101 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -97,6 +97,9 @@
 [ext_resource type="PackedScene" uid="uid://cpckmsso65brw" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelf_small_candles.gltf.glb" id="95_7n3ma"]
 [ext_resource type="PackedScene" uid="uid://cdefli2cqa1my" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelves.gltf.glb" id="96_ndh0i"]
 [ext_resource type="PackedScene" uid="uid://5nf8j7a34hr" path="res://Assets/Models/Dungeon/gltf/Objects/Stool/stool.gltf.glb" id="97_r7178"]
+[ext_resource type="PackedScene" uid="uid://ceb0du76kqpqu" path="res://Assets/Models/Dungeon/gltf/Objects/Swords/sword_shield.gltf.glb" id="98_wtsyr"]
+[ext_resource type="PackedScene" uid="uid://dhfutuhd5yku0" path="res://Assets/Models/Dungeon/gltf/Objects/Swords/sword_shield_broken.gltf.glb" id="99_bp07l"]
+[ext_resource type="PackedScene" uid="uid://bfeqplrvkmil0" path="res://Assets/Models/Dungeon/gltf/Objects/Swords/sword_shield_gold.gltf.glb" id="100_j2ysj"]
 
 [node name="Objects" type="Node3D"]
 
@@ -424,3 +427,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -13)
 
 [node name="stool_gltf" parent="Stool" instance=ExtResource("97_r7178")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -13)
+
+[node name="sword_shield_gltf" parent="." instance=ExtResource("98_wtsyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="sword_shield_broken_gltf" parent="." instance=ExtResource("99_bp07l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -16)
+
+[node name="sword_shield_gold_gltf" parent="." instance=ExtResource("100_j2ysj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
+
+[node name="Swords" type="Node3D" parent="."]
