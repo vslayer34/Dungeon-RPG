@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=86 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -82,6 +82,9 @@
 [ext_resource type="PackedScene" uid="uid://bpvqkds8qxaqk" path="res://Assets/Models/Dungeon/gltf/Objects/Crates/crates_stacked.gltf.glb" id="80_4cbuo"]
 [ext_resource type="PackedScene" uid="uid://cvoi6b4kqm64n" path="res://Assets/Models/Dungeon/gltf/Objects/Kegs/keg.gltf.glb" id="81_kmttx"]
 [ext_resource type="PackedScene" uid="uid://xvsmfwuf627j" path="res://Assets/Models/Dungeon/gltf/Objects/Kegs/keg_decorated.gltf.glb" id="82_uu0vr"]
+[ext_resource type="PackedScene" uid="uid://c6gygcmtcapbo" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/key.gltf.glb" id="83_ndfe5"]
+[ext_resource type="PackedScene" uid="uid://cbqvltublnixy" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/keyring.gltf.glb" id="84_hukh1"]
+[ext_resource type="PackedScene" uid="uid://dbasdfux5fu2f" path="res://Assets/Models/Dungeon/gltf/Objects/Keys/keyring_hanging.gltf.glb" id="85_omd6p"]
 
 [node name="Objects" type="Node3D"]
 
@@ -354,3 +357,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 8)
 
 [node name="keg_decorated_gltf" parent="Kegs" instance=ExtResource("82_uu0vr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8)
+
+[node name="Keys" type="Node3D" parent="."]
+
+[node name="key_gltf" parent="Keys" instance=ExtResource("83_ndfe5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
+
+[node name="keyring_gltf" parent="Keys" instance=ExtResource("84_hukh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 2)
+
+[node name="keyring_hanging_gltf" parent="Keys" instance=ExtResource("85_omd6p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 4)
