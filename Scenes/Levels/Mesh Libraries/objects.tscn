@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=67 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -62,6 +62,10 @@
 [ext_resource type="PackedScene" uid="uid://b4224gf0q0by1" path="res://Assets/Models/Dungeon/gltf/Objects/Bottles/bottle_B_green.gltf.glb" id="60_8d3kk"]
 [ext_resource type="PackedScene" uid="uid://dhlgmyew6fbwg" path="res://Assets/Models/Dungeon/gltf/Objects/Bottles/bottle_C_brown.gltf.glb" id="61_4kgke"]
 [ext_resource type="PackedScene" uid="uid://c7y3ybf5xc15j" path="res://Assets/Models/Dungeon/gltf/Objects/Bottles/bottle_C_green.gltf.glb" id="62_umrnu"]
+[ext_resource type="PackedScene" uid="uid://deib0535haork" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_large.gltf.glb" id="63_xb6yu"]
+[ext_resource type="PackedScene" uid="uid://8waq6mi1du5k" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_small.gltf.glb" id="64_yuls8"]
+[ext_resource type="PackedScene" uid="uid://5so6a3apxrsl" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_small_decorated.gltf.glb" id="65_h7811"]
+[ext_resource type="PackedScene" uid="uid://5bmlu7hyiuo8" path="res://Assets/Models/Dungeon/gltf/Objects/Boxes/box_stacked.gltf.glb" id="66_a2n1j"]
 
 [node name="Objects" type="Node3D"]
 
@@ -260,3 +264,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
 
 [node name="bottle_C_green_gltf" parent="Bottles" instance=ExtResource("62_umrnu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
+
+[node name="Boxes" type="Node3D" parent="."]
+
+[node name="box_large_gltf" parent="Boxes" instance=ExtResource("63_xb6yu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -7)
+
+[node name="box_small_gltf" parent="Boxes" instance=ExtResource("64_yuls8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -5)
+
+[node name="box_small_decorated_gltf" parent="Boxes" instance=ExtResource("65_h7811")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -3)
+
+[node name="box_stacked_gltf" parent="Boxes" instance=ExtResource("66_a2n1j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
