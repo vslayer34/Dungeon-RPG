@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=93 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -90,6 +90,8 @@
 [ext_resource type="PackedScene" uid="uid://ceoanp8y2xkcn" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_food_B.gltf.glb" id="88_bohnq"]
 [ext_resource type="PackedScene" uid="uid://cg1pmk3mc640i" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_small.gltf.glb" id="89_mb1ca"]
 [ext_resource type="PackedScene" uid="uid://bijmo4fgoc8m8" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_stack.gltf.glb" id="90_pdspv"]
+[ext_resource type="PackedScene" uid="uid://gi3rvn2ux6l0" path="res://Assets/Models/Dungeon/gltf/Objects/Rubble/rubble_half.gltf.glb" id="91_ck6jj"]
+[ext_resource type="PackedScene" uid="uid://bcn3o1xfbqvca" path="res://Assets/Models/Dungeon/gltf/Objects/Rubble/rubble_large.gltf.glb" id="92_ltkm5"]
 
 [node name="Objects" type="Node3D"]
 
@@ -390,3 +392,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
 
 [node name="plate_stack_gltf" parent="Plates" instance=ExtResource("90_pdspv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -10)
+
+[node name="Rubble" type="Node3D" parent="."]
+
+[node name="rubble_half_gltf" parent="Rubble" instance=ExtResource("91_ck6jj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
+
+[node name="rubble_large_gltf" parent="Rubble" instance=ExtResource("92_ltkm5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
