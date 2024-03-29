@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=97 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -92,6 +92,10 @@
 [ext_resource type="PackedScene" uid="uid://bijmo4fgoc8m8" path="res://Assets/Models/Dungeon/gltf/Objects/Plates/plate_stack.gltf.glb" id="90_pdspv"]
 [ext_resource type="PackedScene" uid="uid://gi3rvn2ux6l0" path="res://Assets/Models/Dungeon/gltf/Objects/Rubble/rubble_half.gltf.glb" id="91_ck6jj"]
 [ext_resource type="PackedScene" uid="uid://bcn3o1xfbqvca" path="res://Assets/Models/Dungeon/gltf/Objects/Rubble/rubble_large.gltf.glb" id="92_ltkm5"]
+[ext_resource type="PackedScene" uid="uid://lxbphnlycif6" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelf_large.gltf.glb" id="93_0tbei"]
+[ext_resource type="PackedScene" uid="uid://ck5bwgmeq8t6b" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelf_small.gltf.glb" id="94_4jlhs"]
+[ext_resource type="PackedScene" uid="uid://cpckmsso65brw" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelf_small_candles.gltf.glb" id="95_7n3ma"]
+[ext_resource type="PackedScene" uid="uid://cdefli2cqa1my" path="res://Assets/Models/Dungeon/gltf/Objects/Shelfs/shelves.gltf.glb" id="96_ndh0i"]
 
 [node name="Objects" type="Node3D"]
 
@@ -400,3 +404,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
 
 [node name="rubble_large_gltf" parent="Rubble" instance=ExtResource("92_ltkm5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
+
+[node name="Shelfs" type="Node3D" parent="."]
+
+[node name="shelf_large_gltf" parent="Shelfs" instance=ExtResource("93_0tbei")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -13)
+
+[node name="shelf_small_gltf" parent="Shelfs" instance=ExtResource("94_4jlhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -13)
+
+[node name="shelf_small_candles_gltf" parent="Shelfs" instance=ExtResource("95_7n3ma")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -13)
+
+[node name="shelves_gltf" parent="Shelfs" instance=ExtResource("96_ndh0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -13)
