@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3 uid="uid://bjxrfb5d8anqi"]
+[gd_scene load_steps=76 format=3 uid="uid://bjxrfb5d8anqi"]
 
 [ext_resource type="PackedScene" uid="uid://kipu4qe6pd5o" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_blue.gltf.glb" id="1_o5101"]
 [ext_resource type="PackedScene" uid="uid://bmpg8rtfcgcg2" path="res://Assets/Models/Dungeon/gltf/Objects/Banners/banner_brown.gltf.glb" id="2_35lmo"]
@@ -73,6 +73,8 @@
 [ext_resource type="PackedScene" uid="uid://ohxchkt25ugp" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_thin_lit.gltf.glb" id="71_fmqk6"]
 [ext_resource type="PackedScene" uid="uid://dyxu1y2075u6c" path="res://Assets/Models/Dungeon/gltf/Objects/Candles/candle_triple.gltf.glb" id="72_12t14"]
 [ext_resource type="PackedScene" uid="uid://6hxuuhda0ddx" path="res://Assets/Models/Dungeon/gltf/Objects/Chairs/chair.gltf.glb" id="73_peit5"]
+[ext_resource type="PackedScene" uid="uid://d4e58oo45upcy" path="res://Assets/Models/Dungeon/gltf/Objects/Chests/chest.glb" id="74_ac6e2"]
+[ext_resource type="PackedScene" uid="uid://bnn816oltuoyl" path="res://Assets/Models/Dungeon/gltf/Objects/Chests/chest_gold.glb" id="75_o2xvu"]
 
 [node name="Objects" type="Node3D"]
 
@@ -310,3 +312,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
 
 [node name="chair_gltf" parent="Chairs" instance=ExtResource("73_peit5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -10)
+
+[node name="Chests" type="Node3D" parent="."]
+
+[node name="chest2" parent="Chests" instance=ExtResource("74_ac6e2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+
+[node name="chest_gold2" parent="Chests" instance=ExtResource("75_o2xvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
