@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://vckh7e4k3bfa"]
 
-[ext_resource type="MeshLibrary" uid="uid://bc708hmxvwket" path="res://Scenes/Levels/Mesh Libraries/Stairs.tres" id="1_7eib1"]
+[ext_resource type="MeshLibrary" uid="uid://dx1pntpwfj61" path="res://Scenes/Levels/Mesh Libraries/Objects.tres" id="1_rc1rt"]
 
 [node name="Level" type="Node3D"]
 
 [node name="FirstFloorGridMap" type="GridMap" parent="."]
-mesh_library = ExtResource("1_7eib1")
+mesh_library = ExtResource("1_rc1rt")
