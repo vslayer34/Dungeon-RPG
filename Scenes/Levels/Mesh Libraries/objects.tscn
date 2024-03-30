@@ -129,422 +129,380 @@
 
 [node name="Objects" type="Node3D"]
 
-[node name="Banners" type="Node3D" parent="."]
-
-[node name="banner_blue_gltf" parent="Banners" instance=ExtResource("1_o5101")]
+[node name="banner_blue_gltf" parent="." instance=ExtResource("1_o5101")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
 
-[node name="banner_brown_gltf" parent="Banners" instance=ExtResource("2_35lmo")]
+[node name="banner_brown_gltf" parent="." instance=ExtResource("2_35lmo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
 
-[node name="banner_green_gltf" parent="Banners" instance=ExtResource("3_nwkxt")]
+[node name="banner_green_gltf" parent="." instance=ExtResource("3_nwkxt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 
-[node name="banner_patternA_blue_gltf" parent="Banners" instance=ExtResource("4_s6n30")]
+[node name="banner_patternA_blue_gltf" parent="." instance=ExtResource("4_s6n30")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4)
 
-[node name="banner_patternA_brown_gltf" parent="Banners" instance=ExtResource("5_qt107")]
+[node name="banner_patternA_brown_gltf" parent="." instance=ExtResource("5_qt107")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 4)
 
-[node name="banner_patternA_green_gltf" parent="Banners" instance=ExtResource("6_7jl3i")]
+[node name="banner_patternA_green_gltf" parent="." instance=ExtResource("6_7jl3i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 4)
 
-[node name="banner_patternA_red_gltf" parent="Banners" instance=ExtResource("7_1i3lh")]
+[node name="banner_patternA_red_gltf" parent="." instance=ExtResource("7_1i3lh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 4)
 
-[node name="banner_patternA_white_gltf" parent="Banners" instance=ExtResource("8_koasq")]
+[node name="banner_patternA_white_gltf" parent="." instance=ExtResource("8_koasq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 4)
 
-[node name="banner_patternA_yellow_gltf" parent="Banners" instance=ExtResource("9_8q5es")]
+[node name="banner_patternA_yellow_gltf" parent="." instance=ExtResource("9_8q5es")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 4)
 
-[node name="banner_patternB_blue_gltf" parent="Banners" instance=ExtResource("10_5lplb")]
+[node name="banner_patternB_blue_gltf" parent="." instance=ExtResource("10_5lplb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 7)
 
-[node name="banner_patternB_brown_gltf" parent="Banners" instance=ExtResource("11_xbprw")]
+[node name="banner_patternB_brown_gltf" parent="." instance=ExtResource("11_xbprw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 7)
 
-[node name="banner_patternB_green_gltf" parent="Banners" instance=ExtResource("12_eh5r8")]
+[node name="banner_patternB_green_gltf" parent="." instance=ExtResource("12_eh5r8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7)
 
-[node name="banner_patternB_red_gltf" parent="Banners" instance=ExtResource("13_nvatr")]
+[node name="banner_patternB_red_gltf" parent="." instance=ExtResource("13_nvatr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 7)
 
-[node name="banner_patternB_white_gltf" parent="Banners" instance=ExtResource("14_ipaln")]
+[node name="banner_patternB_white_gltf" parent="." instance=ExtResource("14_ipaln")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 7)
 
-[node name="banner_patternB_yellow_gltf" parent="Banners" instance=ExtResource("15_7ys2g")]
+[node name="banner_patternB_yellow_gltf" parent="." instance=ExtResource("15_7ys2g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 7)
 
-[node name="banner_patternC_blue_gltf" parent="Banners" instance=ExtResource("16_jwxr5")]
+[node name="banner_patternC_blue_gltf" parent="." instance=ExtResource("16_jwxr5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 11)
 
-[node name="banner_patternC_brown_gltf" parent="Banners" instance=ExtResource("17_u711b")]
+[node name="banner_patternC_brown_gltf" parent="." instance=ExtResource("17_u711b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
 
-[node name="banner_patternC_green_gltf" parent="Banners" instance=ExtResource("18_ifcxw")]
+[node name="banner_patternC_green_gltf" parent="." instance=ExtResource("18_ifcxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 11)
 
-[node name="banner_patternC_red_gltf" parent="Banners" instance=ExtResource("19_8oj06")]
+[node name="banner_patternC_red_gltf" parent="." instance=ExtResource("19_8oj06")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 11)
 
-[node name="banner_patternC_white_gltf" parent="Banners" instance=ExtResource("20_xas2l")]
+[node name="banner_patternC_white_gltf" parent="." instance=ExtResource("20_xas2l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 11)
 
-[node name="banner_patternC_yellow_gltf" parent="Banners" instance=ExtResource("21_ydjyj")]
+[node name="banner_patternC_yellow_gltf" parent="." instance=ExtResource("21_ydjyj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 11)
 
-[node name="banner_red_gltf" parent="Banners" instance=ExtResource("22_a4gsn")]
+[node name="banner_red_gltf" parent="." instance=ExtResource("22_a4gsn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
 
-[node name="banner_shield_blue_gltf" parent="Banners" instance=ExtResource("23_iqqyr")]
+[node name="banner_shield_blue_gltf" parent="." instance=ExtResource("23_iqqyr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 15)
 
-[node name="banner_shield_brown_gltf" parent="Banners" instance=ExtResource("24_x8wwc")]
+[node name="banner_shield_brown_gltf" parent="." instance=ExtResource("24_x8wwc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 15)
 
-[node name="banner_shield_green_gltf" parent="Banners" instance=ExtResource("25_jp116")]
+[node name="banner_shield_green_gltf" parent="." instance=ExtResource("25_jp116")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 15)
 
-[node name="banner_shield_red_gltf" parent="Banners" instance=ExtResource("26_8ud4l")]
+[node name="banner_shield_red_gltf" parent="." instance=ExtResource("26_8ud4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 15)
 
-[node name="banner_shield_white_gltf" parent="Banners" instance=ExtResource("27_lay0n")]
+[node name="banner_shield_white_gltf" parent="." instance=ExtResource("27_lay0n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 15)
 
-[node name="banner_shield_yellow_gltf" parent="Banners" instance=ExtResource("28_u381r")]
+[node name="banner_shield_yellow_gltf" parent="." instance=ExtResource("28_u381r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 15)
 
-[node name="banner_thin_blue_gltf" parent="Banners" instance=ExtResource("29_60qmy")]
+[node name="banner_thin_blue_gltf" parent="." instance=ExtResource("29_60qmy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 19)
 
-[node name="banner_thin_brown_gltf" parent="Banners" instance=ExtResource("30_aegyy")]
+[node name="banner_thin_brown_gltf" parent="." instance=ExtResource("30_aegyy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 19)
 
-[node name="banner_thin_green_gltf" parent="Banners" instance=ExtResource("31_bf423")]
+[node name="banner_thin_green_gltf" parent="." instance=ExtResource("31_bf423")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 19)
 
-[node name="banner_thin_red_gltf" parent="Banners" instance=ExtResource("32_i6rd6")]
+[node name="banner_thin_red_gltf" parent="." instance=ExtResource("32_i6rd6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 19)
 
-[node name="banner_thin_white_gltf" parent="Banners" instance=ExtResource("33_4h1t0")]
+[node name="banner_thin_white_gltf" parent="." instance=ExtResource("33_4h1t0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 19)
 
-[node name="banner_thin_yellow_gltf" parent="Banners" instance=ExtResource("34_lnm1l")]
+[node name="banner_thin_yellow_gltf" parent="." instance=ExtResource("34_lnm1l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 19)
 
-[node name="banner_triple_blue_gltf" parent="Banners" instance=ExtResource("35_d5e58")]
+[node name="banner_triple_blue_gltf" parent="." instance=ExtResource("35_d5e58")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 23)
 
-[node name="banner_triple_brown_gltf" parent="Banners" instance=ExtResource("36_f5jk5")]
+[node name="banner_triple_brown_gltf" parent="." instance=ExtResource("36_f5jk5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 23)
 
-[node name="banner_triple_green_gltf" parent="Banners" instance=ExtResource("37_s0rpk")]
+[node name="banner_triple_green_gltf" parent="." instance=ExtResource("37_s0rpk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 23)
 
-[node name="banner_triple_red_gltf" parent="Banners" instance=ExtResource("38_4e6c6")]
+[node name="banner_triple_red_gltf" parent="." instance=ExtResource("38_4e6c6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 23)
 
-[node name="banner_triple_white_gltf" parent="Banners" instance=ExtResource("39_hidwo")]
+[node name="banner_triple_white_gltf" parent="." instance=ExtResource("39_hidwo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 23)
 
-[node name="banner_triple_yellow_gltf" parent="Banners" instance=ExtResource("40_l5lt4")]
+[node name="banner_triple_yellow_gltf" parent="." instance=ExtResource("40_l5lt4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 23)
 
-[node name="banner_white_gltf" parent="Banners" instance=ExtResource("41_18sgv")]
+[node name="banner_white_gltf" parent="." instance=ExtResource("41_18sgv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 28)
 
-[node name="banner_yellow_gltf" parent="Banners" instance=ExtResource("42_p3pxr")]
+[node name="banner_yellow_gltf" parent="." instance=ExtResource("42_p3pxr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 28)
 
-[node name="Barrels" type="Node3D" parent="."]
-
-[node name="barrel_large_gltf" parent="Barrels" instance=ExtResource("43_4ou87")]
+[node name="barrel_large_gltf" parent="." instance=ExtResource("43_4ou87")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7)
 
-[node name="barrel_large_decorated_gltf" parent="Barrels" instance=ExtResource("44_kdj8q")]
+[node name="barrel_large_decorated_gltf" parent="." instance=ExtResource("44_kdj8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="barrel_small_gltf" parent="Barrels" instance=ExtResource("45_36ffa")]
+[node name="barrel_small_gltf" parent="." instance=ExtResource("45_36ffa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -7)
 
-[node name="barrel_small_stack_gltf" parent="Barrels" instance=ExtResource("46_kiqlp")]
+[node name="barrel_small_stack_gltf" parent="." instance=ExtResource("46_kiqlp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Barriers" type="Node3D" parent="."]
-
-[node name="barrier_gltf" parent="Barriers" instance=ExtResource("47_tegmx")]
+[node name="barrier_gltf" parent="." instance=ExtResource("47_tegmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
 
-[node name="barrier_column_gltf" parent="Barriers" instance=ExtResource("48_yowmd")]
+[node name="barrier_column_gltf" parent="." instance=ExtResource("48_yowmd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="barrier_colum_half_gltf" parent="Barriers" instance=ExtResource("49_7ni7n")]
+[node name="barrier_colum_half_gltf" parent="." instance=ExtResource("49_7ni7n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="barrier_corner_gltf" parent="Barriers" instance=ExtResource("50_u1d7h")]
+[node name="barrier_corner_gltf" parent="." instance=ExtResource("50_u1d7h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
 
-[node name="barrier_half_gltf" parent="Barriers" instance=ExtResource("51_tojh8")]
+[node name="barrier_half_gltf" parent="." instance=ExtResource("51_tojh8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Beds" type="Node3D" parent="."]
-
-[node name="bed_decorated_gltf" parent="Beds" instance=ExtResource("52_8wv18")]
+[node name="bed_decorated_gltf" parent="." instance=ExtResource("52_8wv18")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
 
-[node name="bed_floor_gltf" parent="Beds" instance=ExtResource("53_fw4sr")]
+[node name="bed_floor_gltf" parent="." instance=ExtResource("53_fw4sr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7)
 
-[node name="bed_frame_gltf" parent="Beds" instance=ExtResource("54_t15r0")]
+[node name="bed_frame_gltf" parent="." instance=ExtResource("54_t15r0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
 
-[node name="Bottles" type="Node3D" parent="."]
-
-[node name="bottle_A_brown_gltf" parent="Bottles" instance=ExtResource("55_vdqrt")]
+[node name="bottle_A_brown_gltf" parent="." instance=ExtResource("55_vdqrt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="bottle_A_green_gltf" parent="Bottles" instance=ExtResource("56_1om5m")]
+[node name="bottle_A_green_gltf" parent="." instance=ExtResource("56_1om5m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="bottle_A_labeled_brown_gltf" parent="Bottles" instance=ExtResource("57_eydfp")]
+[node name="bottle_A_labeled_brown_gltf" parent="." instance=ExtResource("57_eydfp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="bottle_A_labeled_green_gltf" parent="Bottles" instance=ExtResource("58_er000")]
+[node name="bottle_A_labeled_green_gltf" parent="." instance=ExtResource("58_er000")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
 
-[node name="bottle_B_brown_gltf" parent="Bottles" instance=ExtResource("59_20mod")]
+[node name="bottle_B_brown_gltf" parent="." instance=ExtResource("59_20mod")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
 
-[node name="bottle_B_green_gltf" parent="Bottles" instance=ExtResource("60_8d3kk")]
+[node name="bottle_B_green_gltf" parent="." instance=ExtResource("60_8d3kk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
 
-[node name="bottle_C_brown_gltf" parent="Bottles" instance=ExtResource("61_4kgke")]
+[node name="bottle_C_brown_gltf" parent="." instance=ExtResource("61_4kgke")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
 
-[node name="bottle_C_green_gltf" parent="Bottles" instance=ExtResource("62_umrnu")]
+[node name="bottle_C_green_gltf" parent="." instance=ExtResource("62_umrnu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
 
-[node name="Boxes" type="Node3D" parent="."]
-
-[node name="box_large_gltf" parent="Boxes" instance=ExtResource("63_xb6yu")]
+[node name="box_large_gltf" parent="." instance=ExtResource("63_xb6yu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -7)
 
-[node name="box_small_gltf" parent="Boxes" instance=ExtResource("64_yuls8")]
+[node name="box_small_gltf" parent="." instance=ExtResource("64_yuls8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -5)
 
-[node name="box_small_decorated_gltf" parent="Boxes" instance=ExtResource("65_h7811")]
+[node name="box_small_decorated_gltf" parent="." instance=ExtResource("65_h7811")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -3)
 
-[node name="box_stacked_gltf" parent="Boxes" instance=ExtResource("66_a2n1j")]
+[node name="box_stacked_gltf" parent="." instance=ExtResource("66_a2n1j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
 
-[node name="Candles" type="Node3D" parent="."]
-
-[node name="candle_gltf" parent="Candles" instance=ExtResource("67_if5rn")]
+[node name="candle_gltf" parent="." instance=ExtResource("67_if5rn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 
-[node name="candle_lit_gltf" parent="Candles" instance=ExtResource("68_vmu2p")]
+[node name="candle_lit_gltf" parent="." instance=ExtResource("68_vmu2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -10)
 
-[node name="candle_melted_gltf" parent="Candles" instance=ExtResource("69_rd8a1")]
+[node name="candle_melted_gltf" parent="." instance=ExtResource("69_rd8a1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -10)
 
-[node name="candle_thin_gltf" parent="Candles" instance=ExtResource("70_pnic2")]
+[node name="candle_thin_gltf" parent="." instance=ExtResource("70_pnic2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -10)
 
-[node name="candle_thin_lit_gltf" parent="Candles" instance=ExtResource("71_fmqk6")]
+[node name="candle_thin_lit_gltf" parent="." instance=ExtResource("71_fmqk6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
 
-[node name="candle_triple_gltf" parent="Candles" instance=ExtResource("72_12t14")]
+[node name="candle_triple_gltf" parent="." instance=ExtResource("72_12t14")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
 
-[node name="Chairs" type="Node3D" parent="."]
-
-[node name="chair_gltf" parent="Chairs" instance=ExtResource("73_peit5")]
+[node name="chair_gltf" parent="." instance=ExtResource("73_peit5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -10)
 
-[node name="Chests" type="Node3D" parent="."]
-
-[node name="chest2" parent="Chests" instance=ExtResource("74_ac6e2")]
+[node name="chest2" parent="." instance=ExtResource("74_ac6e2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
 
-[node name="chest_gold2" parent="Chests" instance=ExtResource("75_o2xvu")]
+[node name="chest_gold2" parent="." instance=ExtResource("75_o2xvu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
 
-[node name="Coins" type="Node3D" parent="."]
-
-[node name="coin_gltf" parent="Coins" instance=ExtResource("76_jhy2w")]
+[node name="coin_gltf" parent="." instance=ExtResource("76_jhy2w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 3)
 
-[node name="coin_stack_large_gltf" parent="Coins" instance=ExtResource("77_asb2j")]
+[node name="coin_stack_large_gltf" parent="." instance=ExtResource("77_asb2j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
 
-[node name="coin_stack_medium_gltf" parent="Coins" instance=ExtResource("78_c6tuu")]
+[node name="coin_stack_medium_gltf" parent="." instance=ExtResource("78_c6tuu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7)
 
-[node name="coin_stack_small_gltf" parent="Coins" instance=ExtResource("79_42k8q")]
+[node name="coin_stack_small_gltf" parent="." instance=ExtResource("79_42k8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 9)
 
-[node name="Crates" type="Node3D" parent="."]
-
-[node name="crates_stacked_gltf" parent="Crates" instance=ExtResource("80_4cbuo")]
+[node name="crates_stacked_gltf" parent="." instance=ExtResource("80_4cbuo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 5)
 
-[node name="Kegs" type="Node3D" parent="."]
-
-[node name="keg_gltf" parent="Kegs" instance=ExtResource("81_kmttx")]
+[node name="keg_gltf" parent="." instance=ExtResource("81_kmttx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 8)
 
-[node name="keg_decorated_gltf" parent="Kegs" instance=ExtResource("82_uu0vr")]
+[node name="keg_decorated_gltf" parent="." instance=ExtResource("82_uu0vr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8)
 
-[node name="Keys" type="Node3D" parent="."]
-
-[node name="key_gltf" parent="Keys" instance=ExtResource("83_ndfe5")]
+[node name="key_gltf" parent="." instance=ExtResource("83_ndfe5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
 
-[node name="keyring_gltf" parent="Keys" instance=ExtResource("84_hukh1")]
+[node name="keyring_gltf" parent="." instance=ExtResource("84_hukh1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 2)
 
-[node name="keyring_hanging_gltf" parent="Keys" instance=ExtResource("85_omd6p")]
+[node name="keyring_hanging_gltf" parent="." instance=ExtResource("85_omd6p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 4)
 
-[node name="Plates" type="Node3D" parent="."]
-
-[node name="plate_gltf" parent="Plates" instance=ExtResource("86_i3jed")]
+[node name="plate_gltf" parent="." instance=ExtResource("86_i3jed")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
 
-[node name="plate_food_A_gltf" parent="Plates" instance=ExtResource("87_nf2r6")]
+[node name="plate_food_A_gltf" parent="." instance=ExtResource("87_nf2r6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
 
-[node name="plate_food_B_gltf" parent="Plates" instance=ExtResource("88_bohnq")]
+[node name="plate_food_B_gltf" parent="." instance=ExtResource("88_bohnq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -6)
 
-[node name="plate_small_gltf" parent="Plates" instance=ExtResource("89_mb1ca")]
+[node name="plate_small_gltf" parent="." instance=ExtResource("89_mb1ca")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
 
-[node name="plate_stack_gltf" parent="Plates" instance=ExtResource("90_pdspv")]
+[node name="plate_stack_gltf" parent="." instance=ExtResource("90_pdspv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -10)
 
-[node name="Rubble" type="Node3D" parent="."]
-
-[node name="rubble_half_gltf" parent="Rubble" instance=ExtResource("91_ck6jj")]
+[node name="rubble_half_gltf" parent="." instance=ExtResource("91_ck6jj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
 
-[node name="rubble_large_gltf" parent="Rubble" instance=ExtResource("92_ltkm5")]
+[node name="rubble_large_gltf" parent="." instance=ExtResource("92_ltkm5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 4)
 
-[node name="Shelfs" type="Node3D" parent="."]
-
-[node name="shelf_large_gltf" parent="Shelfs" instance=ExtResource("93_0tbei")]
+[node name="shelf_large_gltf" parent="." instance=ExtResource("93_0tbei")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -13)
 
-[node name="shelf_small_gltf" parent="Shelfs" instance=ExtResource("94_4jlhs")]
+[node name="shelf_small_gltf" parent="." instance=ExtResource("94_4jlhs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -13)
 
-[node name="shelf_small_candles_gltf" parent="Shelfs" instance=ExtResource("95_7n3ma")]
+[node name="shelf_small_candles_gltf" parent="." instance=ExtResource("95_7n3ma")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -13)
 
-[node name="shelves_gltf" parent="Shelfs" instance=ExtResource("96_ndh0i")]
+[node name="shelves_gltf" parent="." instance=ExtResource("96_ndh0i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -13)
 
-[node name="Stool" type="Node3D" parent="."]
-
-[node name="stool_gltf" parent="Stool" instance=ExtResource("97_r7178")]
+[node name="stool_gltf" parent="." instance=ExtResource("97_r7178")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -13)
 
-[node name="Swords" type="Node3D" parent="."]
-
-[node name="sword_shield_gltf" parent="Swords" instance=ExtResource("98_wtsyr")]
+[node name="sword_shield_gltf" parent="." instance=ExtResource("98_wtsyr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 
-[node name="sword_shield_broken_gltf" parent="Swords" instance=ExtResource("99_bp07l")]
+[node name="sword_shield_broken_gltf" parent="." instance=ExtResource("99_bp07l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -16)
 
-[node name="sword_shield_gold_gltf" parent="Swords" instance=ExtResource("100_j2ysj")]
+[node name="sword_shield_gold_gltf" parent="." instance=ExtResource("100_j2ysj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="Tables" type="Node3D" parent="."]
-
-[node name="table_long_gltf" parent="Tables" instance=ExtResource("101_g5gs2")]
+[node name="table_long_gltf" parent="." instance=ExtResource("101_g5gs2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 
-[node name="table_long_broken_gltf" parent="Tables" instance=ExtResource("102_pigrp")]
+[node name="table_long_broken_gltf" parent="." instance=ExtResource("102_pigrp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -20)
 
-[node name="table_long_decorated_A_gltf" parent="Tables" instance=ExtResource("103_chcb2")]
+[node name="table_long_decorated_A_gltf" parent="." instance=ExtResource("103_chcb2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -20)
 
-[node name="table_long_decorated_C_gltf" parent="Tables" instance=ExtResource("104_ih0y8")]
+[node name="table_long_decorated_C_gltf" parent="." instance=ExtResource("104_ih0y8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -20)
 
-[node name="table_long_tablecloth_gltf" parent="Tables" instance=ExtResource("105_s6g4x")]
+[node name="table_long_tablecloth_gltf" parent="." instance=ExtResource("105_s6g4x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -20)
 
-[node name="table_long_tablecloth_decorated_A_gltf" parent="Tables" instance=ExtResource("106_wpy6f")]
+[node name="table_long_tablecloth_decorated_A_gltf" parent="." instance=ExtResource("106_wpy6f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -20)
 
-[node name="table_medium_gltf" parent="Tables" instance=ExtResource("107_r7sof")]
+[node name="table_medium_gltf" parent="." instance=ExtResource("107_r7sof")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -26)
 
-[node name="table_medium_broken_gltf" parent="Tables" instance=ExtResource("108_hs1lq")]
+[node name="table_medium_broken_gltf" parent="." instance=ExtResource("108_hs1lq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -26)
 
-[node name="table_medium_decorated_A_gltf" parent="Tables" instance=ExtResource("109_721jg")]
+[node name="table_medium_decorated_A_gltf" parent="." instance=ExtResource("109_721jg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -26)
 
-[node name="table_medium_tablecloth_gltf" parent="Tables" instance=ExtResource("110_65et2")]
+[node name="table_medium_tablecloth_gltf" parent="." instance=ExtResource("110_65et2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -26)
 
-[node name="table_medium_tablecloth_decorated_B_gltf" parent="Tables" instance=ExtResource("111_qimuv")]
+[node name="table_medium_tablecloth_decorated_B_gltf" parent="." instance=ExtResource("111_qimuv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -26)
 
-[node name="table_small_gltf" parent="Tables" instance=ExtResource("112_tmvgw")]
+[node name="table_small_gltf" parent="." instance=ExtResource("112_tmvgw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -26)
 
-[node name="table_small_decorated_A_gltf" parent="Tables" instance=ExtResource("113_4pf4l")]
+[node name="table_small_decorated_A_gltf" parent="." instance=ExtResource("113_4pf4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -26)
 
-[node name="table_small_decorated_B_gltf" parent="Tables" instance=ExtResource("114_yenjf")]
+[node name="table_small_decorated_B_gltf" parent="." instance=ExtResource("114_yenjf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -20)
 
-[node name="Torches" type="Node3D" parent="."]
-
-[node name="torch_gltf" parent="Torches" instance=ExtResource("115_3fhvr")]
+[node name="torch_gltf" parent="." instance=ExtResource("115_3fhvr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -16)
 
-[node name="torch_lit_gltf" parent="Torches" instance=ExtResource("116_v568x")]
+[node name="torch_lit_gltf" parent="." instance=ExtResource("116_v568x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -16)
 
-[node name="torch_mounted_gltf" parent="Torches" instance=ExtResource("117_cayen")]
+[node name="torch_mounted_gltf" parent="." instance=ExtResource("117_cayen")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -16)
 
-[node name="Trunks" type="Node3D" parent="."]
-
-[node name="trunk_large_A_gltf" parent="Trunks" instance=ExtResource("118_3pwdh")]
+[node name="trunk_large_A_gltf" parent="." instance=ExtResource("118_3pwdh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 0)
 
-[node name="trunk_large_B_gltf" parent="Trunks" instance=ExtResource("119_gfy7a")]
+[node name="trunk_large_B_gltf" parent="." instance=ExtResource("119_gfy7a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -2)
 
-[node name="trunk_large_C_gltf" parent="Trunks" instance=ExtResource("120_r5cxr")]
+[node name="trunk_large_C_gltf" parent="." instance=ExtResource("120_r5cxr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -4)
 
-[node name="trunk_medium_A_gltf" parent="Trunks" instance=ExtResource("121_k25qo")]
+[node name="trunk_medium_A_gltf" parent="." instance=ExtResource("121_k25qo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -6)
 
-[node name="trunk_medium_B_gltf" parent="Trunks" instance=ExtResource("122_63o5f")]
+[node name="trunk_medium_B_gltf" parent="." instance=ExtResource("122_63o5f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -8)
 
-[node name="trunk_medium_C_gltf" parent="Trunks" instance=ExtResource("123_4t00n")]
+[node name="trunk_medium_C_gltf" parent="." instance=ExtResource("123_4t00n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -10)
 
-[node name="trunk_small_A_gltf" parent="Trunks" instance=ExtResource("124_qmupk")]
+[node name="trunk_small_A_gltf" parent="." instance=ExtResource("124_qmupk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -12)
 
-[node name="trunk_small_B_gltf" parent="Trunks" instance=ExtResource("125_cl1x5")]
+[node name="trunk_small_B_gltf" parent="." instance=ExtResource("125_cl1x5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -14)
 
-[node name="trunk_small_C_gltf" parent="Trunks" instance=ExtResource("126_1wo7n")]
+[node name="trunk_small_C_gltf" parent="." instance=ExtResource("126_1wo7n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -16)
