@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://cer65y53qt2vl"]
+[gd_scene load_steps=47 format=3 uid="uid://cer65y53qt2vl"]
 
 [ext_resource type="Texture2D" uid="uid://b5d65gnmmpxd2" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_0e1va"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_bc28i"]
@@ -99,7 +99,12 @@ _data = {
 "Move": SubResource("Animation_6dbfn")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_at7v2"]
+radius = 0.394464
+height = 1.35534
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine", "_dashTimer")]
+collision_mask = 2
 script = ExtResource("1_bc28i")
 _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
@@ -133,3 +138,7 @@ script = ExtResource("33_u1b8d")
 
 [node name="DashState" type="Node" parent="StateMachine"]
 script = ExtResource("41_j4lpf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.085973, -0.116316, 0)
+shape = SubResource("CapsuleShape3D_at7v2")
