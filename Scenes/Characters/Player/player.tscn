@@ -105,6 +105,8 @@ height = 1.35534
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine", "_dashTimer")]
 collision_mask = 2
+floor_max_angle = 1.55334
+floor_snap_length = 0.5
 script = ExtResource("1_bc28i")
 _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
