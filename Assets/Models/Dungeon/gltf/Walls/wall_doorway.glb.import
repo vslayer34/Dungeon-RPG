@@ -35,13 +35,12 @@ _subresources={
 "generate/physics": true,
 "physics/layer": 2,
 "physics/mask": 0,
-"physics/shape_type": 3
+"physics/shape_type": 2
 },
 "PATH:wall_doorway/wall_doorway_door": {
-"generate/physics": true,
 "physics/layer": 2,
 "physics/mask": 0,
-"physics/shape_type": 1
+"physics/shape_type": 2
 }
 }
 }
