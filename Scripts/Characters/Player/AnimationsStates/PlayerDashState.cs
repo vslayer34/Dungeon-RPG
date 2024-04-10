@@ -17,6 +17,6 @@ public partial class PlayerDashState : PlayerState
     protected override void EnterCurrentState()
     {
         base.EnterCurrentState();
-        _playerNode.AnimationPlayer.Play(AnimationConsts.DASH);
+        _playerNode.AnimationPlayer.Play(PlayerAnimationConsts.DASH);
     }
 }

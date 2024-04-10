@@ -24,6 +24,6 @@ public partial class PlayerMoveState : PlayerState
     protected override void EnterCurrentState()
     {
         base.EnterCurrentState();
-        _playerNode.AnimationPlayer.Play(AnimationConsts.MOVE);
+        _playerNode.AnimationPlayer.Play(PlayerAnimationConsts.MOVE);
     }
 }

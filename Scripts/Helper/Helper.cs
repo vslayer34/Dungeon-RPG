@@ -4,7 +4,7 @@ namespace DungeonRPG.Scripts.Helper;
 /// <summary>
 /// Contains refrence for animation clips names
 /// </summary>
-public class AnimationConsts
+public class PlayerAnimationConsts
 {
     /// <summary>
     /// Reference to the<c>"Idle"</c>animation name
@@ -20,6 +20,18 @@ public class AnimationConsts
     /// Reference to the<c>"Dash"</c>animation name
     /// </summary>
     public const string DASH = "Dash";
+}
+
+
+/// <summary>
+/// Contains references for the enemy animation clip names
+/// </summary>
+public class EnemyAnimationConstants
+{
+    /// <summary>
+    /// Reference to the<c>"Idle"</c>animation name
+    /// </summary>
+    public const string IDLE = "Idle";
 }
 
 
