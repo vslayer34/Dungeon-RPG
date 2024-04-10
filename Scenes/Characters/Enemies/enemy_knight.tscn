@@ -131,6 +131,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("13_6sq88"), ExtResource("14_p8f8f"), ExtResource("15_b50hi"), ExtResource("16_354jx"), ExtResource("17_2wctb"), ExtResource("18_a6f73"), ExtResource("19_cf0q1"), ExtResource("20_bobog"), ExtResource("21_mpsv0"), ExtResource("22_pr87y"), ExtResource("23_g482n"), ExtResource("24_1350i"), ExtResource("25_dmlt4"), ExtResource("26_vx0x7"), ExtResource("27_2onvh"), ExtResource("28_qiwe4"), ExtResource("29_nf3kt"), ExtResource("30_u3r3y"), ExtResource("31_pl0mw"), ExtResource("32_1pkru"), ExtResource("33_j0pi0"), ExtResource("34_t43l0"), ExtResource("35_j5pil"), ExtResource("36_7d3mb"), ExtResource("37_c5ie6"), ExtResource("38_0bl8o"), ExtResource("39_ewhkj"), ExtResource("40_rshar"), ExtResource("41_do3b6"), ExtResource("42_xbbsx"), ExtResource("43_yfvx1"), ExtResource("44_ovvuq"), ExtResource("45_a05x4")]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite3D:pixel_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.454545, 0.545455),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0025, 0.0025, 0.0075]
+}
 
 [sub_resource type="Animation" id="Animation_4shd4"]
 resource_name = "Idle"
@@ -200,7 +212,7 @@ height = 1.32894
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.743, 0)
 pixel_size = 0.0025
-texture = ExtResource("88_82h3u")
+texture = ExtResource("13_6sq88")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
