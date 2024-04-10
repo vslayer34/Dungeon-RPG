@@ -2,23 +2,8 @@ using Godot;
 using System;
 using DungeonRPG.Scripts.Helper;
 
-public partial class Player : CharacterBody3D
+public partial class Player : Character
 {
-    [ExportGroup("Required Nodes")]
-    [Export]
-    private AnimationPlayer _animationPlayer;
-
-    [Export]
-    private Sprite3D _sprite3D;
-
-    [Export]
-    public StateMachine StateMachine { get; private set; }
-
-    [Export]
-    private Timer _dashTimer;
-
-    //----------------------------------------------------------------------------------------
-
     [Export(PropertyHint.Range, "0, 10, 0.1")]
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
