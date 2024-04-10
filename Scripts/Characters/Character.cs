@@ -14,4 +14,20 @@ public abstract partial class Character : CharacterBody3D
 
     [Export]
     protected Timer _dashTimer;
+
+    protected Vector3 _movmentDirection = Vector3.Zero;
+
+
+    /// <summary>
+    /// Flip the player sprite according to the moving direction
+    /// </summary>
+    protected void Flip()
+    {
+        if (Velocity.X == 0)
+        {
+            return;
+        }
+        
+        _sprite3D.FlipH = Velocity.X < 0;
+    }
 }

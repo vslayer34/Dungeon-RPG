@@ -7,7 +7,6 @@ public partial class Player : Character
     [Export(PropertyHint.Range, "0, 10, 0.1")]
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
-    private Vector3 _movmentDirection = Vector3.Zero;
 
     //Dash Config------------------------------------------------------------------------------
 
@@ -79,21 +78,6 @@ public partial class Player : Character
 
         MoveAndSlide();
         Flip();
-    }
-
-
-
-    /// <summary>
-    /// Flip the player sprite according to the moving direction
-    /// </summary>
-    private void Flip()
-    {
-        if (Velocity.X == 0)
-        {
-            return;
-        }
-        
-        _sprite3D.FlipH = Velocity.X < 0;
     }
 
 
