@@ -30,4 +30,12 @@ public abstract partial class Character : CharacterBody3D
         
         _sprite3D.FlipH = Velocity.X < 0;
     }
+
+
+    // Getters and Setters----------------------------------------------------------------------------------
+    
+    /// <summary>
+    /// Reference to the AnimationPlayer Node
+    /// </summary>
+    public AnimationPlayer AnimationPlayer { get => _animationPlayer; }
 }

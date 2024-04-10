@@ -91,16 +91,12 @@ public partial class Player : Character
 
 
     // Getters and Setters----------------------------------------------------------------------------------
-    
-    /// <summary>
-    /// Reference to the AnimationPlayer Node
-    /// </summary>
-    public AnimationPlayer AnimationPlayer { get => _animationPlayer; }
 
     /// <summary>
     /// Reference to the input vector
     /// </summary>
     public Vector2 InputVector { get => _inputVector; }
+    
 
     /// <summary>
     /// Reference to the player dashing stats

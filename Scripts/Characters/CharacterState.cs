@@ -3,10 +3,12 @@ using Godot;
 
 public abstract partial class CharacterState : Node
 {
-    protected Player _playerNode;
+    protected Character _characterNode;
     
     public override void _Ready()
     {
+        _characterNode = GetOwner<Character>();
+
         // Disable the physics process unless its the current state
         SetPhysicsProcess(false);
     }
