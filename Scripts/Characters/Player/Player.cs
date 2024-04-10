@@ -4,6 +4,10 @@ using DungeonRPG.Scripts.Helper;
 
 public partial class Player : Character
 {
+    [Export]
+    private Timer _dashTimer;
+
+
     [Export(PropertyHint.Range, "0, 10, 0.1")]
     private float _speed = 5.0f;
     private Vector2 _inputVector = Vector2.Zero;
@@ -96,7 +100,7 @@ public partial class Player : Character
     /// Reference to the input vector
     /// </summary>
     public Vector2 InputVector { get => _inputVector; }
-    
+
 
     /// <summary>
     /// Reference to the player dashing stats

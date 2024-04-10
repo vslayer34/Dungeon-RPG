@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=3 uid="uid://c2n7xqoxm7dup"]
+[gd_scene load_steps=110 format=3 uid="uid://c2n7xqoxm7dup"]
 
 [ext_resource type="Texture2D" uid="uid://k0amt5527oce" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_000.png" id="1_qy1q4"]
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyKnight.cs" id="1_stjhu"]
@@ -100,6 +100,8 @@
 [ext_resource type="Texture2D" uid="uid://cxiik14lt0cr6" path="res://Assets/Sprites/Characters/Enemy Knight/TakeHit/0_Demons_of_Darkness_Hurt_009.png" id="97_nmcrr"]
 [ext_resource type="Texture2D" uid="uid://fxmnnxbx8dk" path="res://Assets/Sprites/Characters/Enemy Knight/TakeHit/0_Demons_of_Darkness_Hurt_010.png" id="98_15nir"]
 [ext_resource type="Texture2D" uid="uid://bul6uee7p5344" path="res://Assets/Sprites/Characters/Enemy Knight/TakeHit/0_Demons_of_Darkness_Hurt_011.png" id="99_bpg2y"]
+[ext_resource type="Script" path="res://Scripts/Characters/StateMachine.cs" id="101_gqg7d"]
+[ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyIdleState.cs" id="102_txdau"]
 
 [sub_resource type="Animation" id="Animation_3heoc"]
 resource_name = "Attack"
@@ -208,8 +210,11 @@ _data = {
 radius = 0.439105
 height = 1.32894
 
-[node name="EnemyKnight" type="CharacterBody3D"]
+[node name="EnemyKnight" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine")]
 script = ExtResource("1_stjhu")
+_animationPlayer = NodePath("AnimationPlayer")
+_sprite3D = NodePath("Sprite3D")
+StateMachine = NodePath("EnemyStateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.743, 0)
@@ -225,4 +230,10 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.075, 0.665, 0)
 shape = SubResource("CapsuleShape3D_8vsmo")
 
-[node name="EnemyStateMachine" type="Node" parent="."]
+[node name="EnemyStateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_states")]
+script = ExtResource("101_gqg7d")
+_currentState = NodePath("EnemyIdleState")
+_states = [NodePath("EnemyIdleState")]
+
+[node name="EnemyIdleState" type="Node" parent="EnemyStateMachine"]
+script = ExtResource("102_txdau")

@@ -12,9 +12,6 @@ public abstract partial class Character : CharacterBody3D
     [Export]
     public StateMachine StateMachine { get; protected set; }
 
-    [Export]
-    protected Timer _dashTimer;
-
     protected Vector3 _movmentDirection = Vector3.Zero;
 
 
