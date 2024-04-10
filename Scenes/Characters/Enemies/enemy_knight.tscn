@@ -1,4 +1,4 @@
-[gd_scene load_steps=106 format=3 uid="uid://c2n7xqoxm7dup"]
+[gd_scene load_steps=107 format=3 uid="uid://c2n7xqoxm7dup"]
 
 [ext_resource type="Texture2D" uid="uid://k0amt5527oce" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_000.png" id="1_qy1q4"]
 [ext_resource type="Texture2D" uid="uid://b5s8h0qlodv6h" path="res://Assets/Sprites/Characters/Enemy Knight/Attack/0_Demons_of_Darkness_Slashing_000.png" id="2_wyt4c"]
@@ -191,14 +191,22 @@ _data = {
 "TakeHit": SubResource("Animation_b1tyu")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8vsmo"]
+radius = 0.439105
+height = 1.32894
+
 [node name="EnemyKnight" type="CharacterBody3D"]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.743, 0)
 pixel_size = 0.0025
-texture = ExtResource("87_2yu3k")
+texture = ExtResource("88_82h3u")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_ddcu6")
 }
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.075, 0.665, 0)
+shape = SubResource("CapsuleShape3D_8vsmo")
