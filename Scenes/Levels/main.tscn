@@ -1,9 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgi52o8qxersl"]
+[gd_scene load_steps=8 format=3 uid="uid://dgi52o8qxersl"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Main.cs" id="1_04o1t"]
 [ext_resource type="PackedScene" uid="uid://cer65y53qt2vl" path="res://Scenes/Characters/Player/player.tscn" id="2_7b5ms"]
 [ext_resource type="PackedScene" uid="uid://vckh7e4k3bfa" path="res://Scenes/Levels/level.tscn" id="3_1opa5"]
 [ext_resource type="PackedScene" uid="uid://c2n7xqoxm7dup" path="res://Scenes/Characters/Enemies/enemy_knight.tscn" id="4_vv6tn"]
+
+[sub_resource type="Curve3D" id="Curve3D_kyhk6"]
+_data = {
+"points": PackedVector3Array(1.06285, 0.18281, -0.18281, -1.06285, -0.18281, 0.18281, -1.35188, 1.10769, -1.10773, -0.430887, 0.589053, -0.589053, 0.430887, -0.589053, 0.589053, -1.75404, -3.07662, 3.07659, -0.689417, -0.507806, 0.507806, 0.689417, 0.507806, -0.507806, 4.73799, -3.17818, 3.17815, 0.833046, -0.771863, 0.771863, -0.833046, 0.771863, -0.771863, 4.93907, 1.02644, -1.02648, 0.517063, 0.589054, -0.589054, -0.517063, -0.589054, 0.589054, -1.35188, 1.10769, -1.10773),
+"tilts": PackedFloat32Array(3.10166, 2.28147, -2.03473, 3.05524, 0.858457)
+}
+point_count = 5
+
+[sub_resource type="Curve3D" id="Curve3D_vryop"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.0308771, 0, -0.452604, 0, 0, 0, 0, 0, 0, 7.81556, 0, -0.194073, 0, 0, 0, 0, 0, 0, 7.56109, 0, -8.56436, 0, 0, 0, 0, 0, 0, 10.2039, 0, -8.50691, 0, 0, 0, 0, 0, 0, 10.6284, 0, 4.61318, 0, 0, 0, 0, 0, 0, -0.287356, 0, 4.72808, 0, 0, 0, 0, 0, 0, 0.0308771, 0, -0.452604),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
+
+[sub_resource type="Curve3D" id="Curve3D_ba0yn"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 9.72161, 0, -0.808701, 0, 0, 0, 0, 0, 0, 2.45399, 0, -0.722523, 0, 0, 0, 0, 0, 0, 2.42526, 0, -8.47849, 0, 0, 0, 0, 0, 0, -0.935656, 0, -8.76574, 0, 0, 0, 0, 0, 0, -1.05056, 0, 4.5343, 0, 0, 0, 0, 0, 0, 9.83651, 0, 4.41939, 0, 0, 0, 0, 0, 0, 9.72161, 0, -0.808701),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_04o1t")
@@ -18,3 +39,17 @@ transform = Transform3D(1, 0, 0, 0, 0.981627, 0.190809, 0, -0.190809, 0.981627, 
 
 [node name="EnemyKnight" parent="." instance=ExtResource("4_vv6tn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73275, 1.25313, 0)
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Path3D" type="Path3D" parent="Enemies"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.1, -10.341)
+curve = SubResource("Curve3D_kyhk6")
+
+[node name="Path3D2" type="Path3D" parent="Enemies"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.72183, 1.5, -3.562)
+curve = SubResource("Curve3D_vryop")
+
+[node name="Path3D3" type="Path3D" parent="Enemies"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5011, 1.5, -3.562)
+curve = SubResource("Curve3D_ba0yn")
