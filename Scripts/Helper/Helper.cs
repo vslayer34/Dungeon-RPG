@@ -32,6 +32,12 @@ public class EnemyAnimationConstants
     /// Reference to the<c>"Idle"</c>animation name
     /// </summary>
     public const string IDLE = "Idle";
+
+
+    /// <summary>
+    /// Reference to the<c>"Move"</c>animation name
+    /// </summary>
+    public const string MOVE = "Move";
 }
 
 
