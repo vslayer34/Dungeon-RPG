@@ -7,8 +7,8 @@
 
 [sub_resource type="Curve3D" id="Curve3D_kyhk6"]
 _data = {
-"points": PackedVector3Array(1.06285, 0.18281, -0.18281, -1.06285, -0.18281, 0.18281, -1.35188, 1.10769, -1.10773, -0.430887, 0.589053, -0.589053, 0.430887, -0.589053, 0.589053, -1.75404, -3.07662, 3.07659, -0.689417, -0.507806, 0.507806, 0.689417, 0.507806, -0.507806, 4.73799, -3.17818, 3.17815, 0.833046, -0.771863, 0.771863, -0.833046, 0.771863, -0.771863, 4.93907, 1.02644, -1.02648, 0.517063, 0.589054, -0.589054, -0.517063, -0.589054, 0.589054, -1.35188, 1.10769, -1.10773),
-"tilts": PackedFloat32Array(3.10166, 2.28147, -2.03473, 3.05524, 0.858457)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 4.21557, 8.55488, -8.55488, 0, 0, 0, 0, 0, 0, -1.57663, 8.59003, -8.59003, 0, 0, 0, 0, 0, 0, -1.72579, 3.54511, -3.54511, 0, 0, 0, 0, 0, 0, 4.71276, 3.73847, -3.73847, 0, 0, 0, 0, 0, 0, 4.21557, 8.55488, -8.55488),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
 
@@ -37,14 +37,15 @@ transform = Transform3D(1, 0, 0, 0, 0.981627, 0.190809, 0, -0.190809, 0.981627, 
 
 [node name="Level" parent="." instance=ExtResource("3_1opa5")]
 
-[node name="EnemyKnight" parent="." instance=ExtResource("4_vv6tn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73275, 1.25313, 0)
-
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Path3D" type="Path3D" parent="Enemies"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.1, -10.341)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.425, 0)
 curve = SubResource("Curve3D_kyhk6")
+
+[node name="EnemyKnight" parent="Enemies/Path3D" node_paths=PackedStringArray("_pathNode") instance=ExtResource("4_vv6tn")]
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 1.73275, 0.108279, 0.108279)
+_pathNode = NodePath("..")
 
 [node name="Path3D2" type="Path3D" parent="Enemies"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.72183, 1.5, -3.562)
