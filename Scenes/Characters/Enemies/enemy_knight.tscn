@@ -211,8 +211,9 @@ _data = {
 radius = 0.439105
 height = 1.32894
 
-[node name="EnemyKnight" type="CharacterBody3D" node_paths=PackedStringArray("_animationPlayer", "_sprite3D", "StateMachine")]
+[node name="EnemyKnight" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "_animationPlayer", "_sprite3D", "StateMachine")]
 script = ExtResource("1_stjhu")
+_navigationAgent = NodePath("NavigationAgent3D")
 _animationPlayer = NodePath("AnimationPlayer")
 _sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("EnemyStateMachine")
@@ -241,3 +242,6 @@ script = ExtResource("102_txdau")
 
 [node name="EnemyReturn" type="Node" parent="EnemyStateMachine"]
 script = ExtResource("103_ktrfm")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+debug_enabled = true

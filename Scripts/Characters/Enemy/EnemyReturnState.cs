@@ -16,7 +16,8 @@ public partial class EnemyReturnState : EnemyStateMachine
         //     _enemyNode.PathNode.Curve.GetPointPosition(0).Z);
 
         // _destination = _enemyNode.PathNode.Curve.GetPointPosition(0);
-        // _destination = _enemyNode.PathNode.GlobalPosition + _enemyNode.PathNode.Curve.GetPointPosition(0);
+        _destination = _enemyNode.PathNode.GlobalPosition + _enemyNode.PathNode.Curve.GetPointPosition(0);
+
         _destination = new Vector3(
             _enemyNode.PathNode.Curve.GetPointPosition(0).X, 
             _enemyNode.Position.Y,
@@ -35,7 +36,8 @@ public partial class EnemyReturnState : EnemyStateMachine
     protected override void EnterCurrentState()
     {
         _enemyNode.AnimationPlayer.Play(EnemyAnimationConstants.MOVE);
-        // _enemyNode.Position = _destination;
+
+        _enemyNode.NavAgent.TargetPosition = _destination;
     }
 
 
@@ -44,14 +46,14 @@ public partial class EnemyReturnState : EnemyStateMachine
     /// </summary>
     private void MoveToDestination()
     {
-        if (_enemyNode.Position == _destination)
+        if (_enemyNode.NavAgent.IsNavigationFinished())
         {
             GD.Print("Reached final destination");
             return;
         }
 
-        GD.Print(_destination);
-        _enemyNode.Velocity = _enemyNode.Position.DirectionTo(_destination);
+        // GD.Print(_destination);
+        _enemyNode.Velocity = _enemyNode.GlobalPosition.DirectionTo(_destination);
 
         _enemyNode.MoveAndSlide();
     }
