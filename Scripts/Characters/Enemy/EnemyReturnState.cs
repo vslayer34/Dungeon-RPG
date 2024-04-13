@@ -16,7 +16,12 @@ public partial class EnemyReturnState : EnemyStateMachine
         //     _enemyNode.PathNode.Curve.GetPointPosition(0).Z);
 
         // _destination = _enemyNode.PathNode.Curve.GetPointPosition(0);
-        _destination = _enemyNode.PathNode.GlobalPosition + _enemyNode.PathNode.Curve.GetPointPosition(0);
+        // _destination = _enemyNode.PathNode.GlobalPosition + _enemyNode.PathNode.Curve.GetPointPosition(0);
+        _destination = new Vector3(
+            _enemyNode.PathNode.Curve.GetPointPosition(0).X, 
+            _enemyNode.Position.Y,
+            _enemyNode.PathNode.Curve.GetPointPosition(0).Z
+        );
     }
 
     public override void _PhysicsProcess(double delta)

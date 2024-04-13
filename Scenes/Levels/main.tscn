@@ -44,7 +44,7 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 curve = SubResource("Curve3D_kyhk6")
 
 [node name="EnemyKnight" parent="Enemies/Path3D" node_paths=PackedStringArray("_pathNode") instance=ExtResource("4_vv6tn")]
-transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 1.73275, 0.108279, 0.108279)
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 1.733, -0.308239, -0.200239)
 collision_mask = 3
 _pathNode = NodePath("..")
 
