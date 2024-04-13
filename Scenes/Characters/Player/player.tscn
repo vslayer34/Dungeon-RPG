@@ -114,9 +114,10 @@ _sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.703431, 0)
 pixel_size = 0.0025
 texture_filter = 1
-texture = ExtResource("2_oh2r3")
+texture = ExtResource("1_0e1va")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -142,5 +143,5 @@ script = ExtResource("33_u1b8d")
 script = ExtResource("41_j4lpf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.085973, -0.116316, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0202016, 0.679, 0)
 shape = SubResource("CapsuleShape3D_at7v2")
