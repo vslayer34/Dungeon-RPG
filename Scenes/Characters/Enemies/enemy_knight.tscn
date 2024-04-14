@@ -234,7 +234,7 @@ shape = SubResource("CapsuleShape3D_8vsmo")
 
 [node name="EnemyStateMachine" type="Node" parent="." node_paths=PackedStringArray("_currentState", "_states")]
 script = ExtResource("101_gqg7d")
-_currentState = NodePath("EnemyReturn")
+_currentState = NodePath("EnemyIdleState")
 _states = [NodePath("EnemyIdleState"), NodePath("EnemyReturn")]
 
 [node name="EnemyIdleState" type="Node" parent="EnemyStateMachine"]
