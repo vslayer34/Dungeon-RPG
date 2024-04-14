@@ -23,6 +23,12 @@ public partial class EnemyReturnState : EnemyStateMachine
     {
         base._PhysicsProcess(delta);
 
+        if (_enemyNode.NavAgent.IsNavigationFinished())
+        {
+            _enemyNode.StateMachine.SwitchState<EnemyPatrolState>();
+            return;
+        }
+
         MoveToDestination();
     }
 

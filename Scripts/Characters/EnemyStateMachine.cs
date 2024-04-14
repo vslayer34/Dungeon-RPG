@@ -34,13 +34,7 @@ public partial class EnemyStateMachine : CharacterState
     /// </summary>
     protected void MoveToDestination()
     {
-        if (_enemyNode.NavAgent.IsNavigationFinished())
-        {
-            _enemyNode.StateMachine.SwitchState<EnemyPatrolState>();
-            return;
-        }
-
-        // GD.Print(_destination);
+        _enemyNode.NavAgent.GetNextPathPosition();
         _enemyNode.Velocity = _enemyNode.GlobalPosition.DirectionTo(_destination);
 
         _enemyNode.MoveAndSlide();
