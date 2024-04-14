@@ -48,7 +48,7 @@ public partial class EnemyReturnState : EnemyStateMachine
     {
         if (_enemyNode.NavAgent.IsNavigationFinished())
         {
-            GD.Print("Reached final destination");
+            _enemyNode.StateMachine.SwitchState<EnemyPatrolState>();
             return;
         }
 
