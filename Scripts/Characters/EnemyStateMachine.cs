@@ -30,7 +30,7 @@ public partial class EnemyStateMachine : CharacterState
 
 
     /// <summary>
-    /// MOve the enemy to the waypoint position
+    /// Move the enemy to the waypoint position
     /// </summary>
     protected void MoveToDestination()
     {
