@@ -39,6 +39,7 @@ public partial class EnemyPatrolState : EnemyStateMachine
         _rng = new RandomNumberGenerator();
         _enemyNode.NavAgent.NavigationFinished += HandleSettingTheNextaypoint;
         _waitTimer.Timeout += HandleWaitTimerTimeout;
+        _enemyNode.DetectionArea.BodyEntered += HandleChaseArea;
 
         _currentWaypointIndex = 1;
 
@@ -55,6 +56,7 @@ public partial class EnemyPatrolState : EnemyStateMachine
         base.ExitCurrentState();
         _enemyNode.NavAgent.NavigationFinished -= HandleSettingTheNextaypoint;
         _waitTimer.Timeout -= HandleWaitTimerTimeout;
+        _enemyNode.DetectionArea.BodyEntered -= HandleChaseArea;
     }
 
 

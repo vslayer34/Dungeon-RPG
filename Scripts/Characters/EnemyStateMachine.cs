@@ -40,4 +40,10 @@ public partial class EnemyStateMachine : CharacterState
 
         _enemyNode.MoveAndSlide();
     }
+
+
+    protected void HandleChaseArea(Node3D body)
+    {
+        _enemyNode.StateMachine.SwitchState<EnemyChaseState>();
+    }
 }

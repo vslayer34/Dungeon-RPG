@@ -35,8 +35,15 @@ public partial class EnemyReturnState : EnemyStateMachine
 
     protected override void EnterCurrentState()
     {
+        _enemyNode.DetectionArea.BodyEntered += HandleChaseArea;
         _enemyNode.AnimationPlayer.Play(EnemyAnimationConstants.MOVE);
 
         _enemyNode.NavAgent.TargetPosition = _destination;
+    }
+
+
+    protected override void ExitCurrentState()
+    {
+        _enemyNode.DetectionArea.BodyEntered -= HandleChaseArea;
     }
 }
