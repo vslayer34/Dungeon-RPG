@@ -217,6 +217,8 @@ height = 1.32894
 radius = 6.0
 
 [node name="EnemyKnight" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "_detectionArea", "_animationPlayer", "_sprite3D", "StateMachine")]
+collision_layer = 0
+collision_mask = 3
 script = ExtResource("1_stjhu")
 _navigationAgent = NodePath("NavigationAgent3D")
 _detectionArea = NodePath("DetectionArea")
