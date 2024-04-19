@@ -28,10 +28,13 @@ public abstract partial class CharacterState : Node
         // Listen to the notification of disabling the previouse state
         if (what == NotificationConsts.EXIT_STATE)
         {
+            ExitCurrentState();
             SetPhysicsProcess(false);
         }
     }
 
 
     protected virtual void EnterCurrentState() { }
+
+    protected virtual void ExitCurrentState() { }
 }

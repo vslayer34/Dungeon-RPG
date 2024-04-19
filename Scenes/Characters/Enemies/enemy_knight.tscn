@@ -244,8 +244,13 @@ script = ExtResource("102_txdau")
 [node name="EnemyReturn" type="Node" parent="EnemyStateMachine"]
 script = ExtResource("103_ktrfm")
 
-[node name="EnemyPatrolState" type="Node" parent="EnemyStateMachine"]
+[node name="EnemyPatrolState" type="Node" parent="EnemyStateMachine" node_paths=PackedStringArray("_waitTimer")]
 script = ExtResource("104_n5oms")
+_waitTimer = NodePath("WaitTimer")
+_maxWaitTime = 4.0
+
+[node name="WaitTimer" type="Timer" parent="EnemyStateMachine/EnemyPatrolState"]
+one_shot = true
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 debug_enabled = true

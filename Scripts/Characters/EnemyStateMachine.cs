@@ -34,6 +34,7 @@ public partial class EnemyStateMachine : CharacterState
     /// </summary>
     protected void MoveToDestination()
     {
+        _enemyNode.NavAgent.TargetPosition = _destination;
         _enemyNode.NavAgent.GetNextPathPosition();
         _enemyNode.Velocity = _enemyNode.GlobalPosition.DirectionTo(_destination);
 
