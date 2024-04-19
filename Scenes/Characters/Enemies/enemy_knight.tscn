@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=3 uid="uid://c2n7xqoxm7dup"]
+[gd_scene load_steps=113 format=3 uid="uid://c2n7xqoxm7dup"]
 
 [ext_resource type="Texture2D" uid="uid://k0amt5527oce" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_000.png" id="1_qy1q4"]
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyKnight.cs" id="1_stjhu"]
@@ -212,6 +212,9 @@ _data = {
 radius = 0.439105
 height = 1.32894
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_ti3h3"]
+radius = 6.0
+
 [node name="EnemyKnight" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "_animationPlayer", "_sprite3D", "StateMachine")]
 script = ExtResource("1_stjhu")
 _navigationAgent = NodePath("NavigationAgent3D")
@@ -254,3 +257,8 @@ one_shot = true
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 debug_enabled = true
+
+[node name="DetectionArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea"]
+shape = SubResource("SphereShape3D_ti3h3")
